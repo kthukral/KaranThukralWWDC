@@ -26,6 +26,20 @@
 		A44DC54518EDFC2D0016B43C /* InformationStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A44DC54418EDFC2D0016B43C /* InformationStore.m */; };
 		A44DC54718EE01070016B43C /* shopify-bag-100x100.png in Resources */ = {isa = PBXBuildFile; fileRef = A44DC54618EE01070016B43C /* shopify-bag-100x100.png */; };
 		A44DC54918EE02A20016B43C /* RemembrIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A44DC54818EE02A20016B43C /* RemembrIcon@2x.png */; };
+		A470E8BA18F02AA300D5071C /* CBC1.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A470E8AA18F02AA300D5071C /* CBC1.PNG */; };
+		A470E8BB18F02AA300D5071C /* CBC2.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A470E8AB18F02AA300D5071C /* CBC2.PNG */; };
+		A470E8BC18F02AA300D5071C /* CBC3.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A470E8AC18F02AA300D5071C /* CBC3.PNG */; };
+		A470E8BD18F02AA300D5071C /* CBC4.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A470E8AD18F02AA300D5071C /* CBC4.PNG */; };
+		A470E8BE18F02AA300D5071C /* CBC5.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A470E8AE18F02AA300D5071C /* CBC5.PNG */; };
+		A470E8BF18F02AA300D5071C /* CBC6.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A470E8AF18F02AA300D5071C /* CBC6.PNG */; };
+		A470E8C018F02AA300D5071C /* CBC7.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A470E8B018F02AA300D5071C /* CBC7.PNG */; };
+		A470E8C118F02AA300D5071C /* CBC8.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A470E8B118F02AA300D5071C /* CBC8.PNG */; };
+		A470E8C218F02AA300D5071C /* TechNews1.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A470E8B318F02AA300D5071C /* TechNews1.PNG */; };
+		A470E8C318F02AA300D5071C /* TechNews2.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A470E8B418F02AA300D5071C /* TechNews2.PNG */; };
+		A470E8C418F02AA300D5071C /* TechNews3.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A470E8B518F02AA300D5071C /* TechNews3.PNG */; };
+		A470E8C518F02AA300D5071C /* Meme1.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A470E8B718F02AA300D5071C /* Meme1.PNG */; };
+		A470E8C618F02AA300D5071C /* Meme2.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A470E8B818F02AA300D5071C /* Meme2.PNG */; };
+		A470E8C718F02AA300D5071C /* Meme3.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A470E8B918F02AA300D5071C /* Meme3.PNG */; };
 		A47573A518EE62E0000B3BC3 /* KTNavigationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A47573A418EE62E0000B3BC3 /* KTNavigationDelegate.m */; };
 		A47573A818EE6452000B3BC3 /* KTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A47573A718EE6452000B3BC3 /* KTNavigationController.m */; };
 		A47573AA18EE6B47000B3BC3 /* profileImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A47573A918EE6B47000B3BC3 /* profileImage.jpeg */; };
@@ -86,6 +100,20 @@
 		A44DC54418EDFC2D0016B43C /* InformationStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationStore.m; sourceTree = "<group>"; };
 		A44DC54618EE01070016B43C /* shopify-bag-100x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "shopify-bag-100x100.png"; path = "Assets/shopify-bag-100x100.png"; sourceTree = "<group>"; };
 		A44DC54818EE02A20016B43C /* RemembrIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RemembrIcon@2x.png"; sourceTree = "<group>"; };
+		A470E8AA18F02AA300D5071C /* CBC1.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CBC1.PNG; sourceTree = "<group>"; };
+		A470E8AB18F02AA300D5071C /* CBC2.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CBC2.PNG; sourceTree = "<group>"; };
+		A470E8AC18F02AA300D5071C /* CBC3.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CBC3.PNG; sourceTree = "<group>"; };
+		A470E8AD18F02AA300D5071C /* CBC4.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CBC4.PNG; sourceTree = "<group>"; };
+		A470E8AE18F02AA300D5071C /* CBC5.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CBC5.PNG; sourceTree = "<group>"; };
+		A470E8AF18F02AA300D5071C /* CBC6.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CBC6.PNG; sourceTree = "<group>"; };
+		A470E8B018F02AA300D5071C /* CBC7.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CBC7.PNG; sourceTree = "<group>"; };
+		A470E8B118F02AA300D5071C /* CBC8.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CBC8.PNG; sourceTree = "<group>"; };
+		A470E8B318F02AA300D5071C /* TechNews1.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TechNews1.PNG; sourceTree = "<group>"; };
+		A470E8B418F02AA300D5071C /* TechNews2.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TechNews2.PNG; sourceTree = "<group>"; };
+		A470E8B518F02AA300D5071C /* TechNews3.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TechNews3.PNG; sourceTree = "<group>"; };
+		A470E8B718F02AA300D5071C /* Meme1.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Meme1.PNG; sourceTree = "<group>"; };
+		A470E8B818F02AA300D5071C /* Meme2.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Meme2.PNG; sourceTree = "<group>"; };
+		A470E8B918F02AA300D5071C /* Meme3.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Meme3.PNG; sourceTree = "<group>"; };
 		A47573A318EE62E0000B3BC3 /* KTNavigationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTNavigationDelegate.h; sourceTree = "<group>"; };
 		A47573A418EE62E0000B3BC3 /* KTNavigationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTNavigationDelegate.m; sourceTree = "<group>"; };
 		A47573A618EE6452000B3BC3 /* KTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTNavigationController.h; sourceTree = "<group>"; };
@@ -200,6 +228,9 @@
 		A414E74B18EDF57D00943AF9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A470E8A918F02AA300D5071C /* CBC News */,
+				A470E8B218F02AA300D5071C /* Kik-Tech-News */,
+				A470E8B618F02AA300D5071C /* Kik-Your-Memes */,
 				A4F17B9218EF42790077C1E2 /* Remembr iPhone 5 Screenshot */,
 				A47573A918EE6B47000B3BC3 /* profileImage.jpeg */,
 				A44DC54818EE02A20016B43C /* RemembrIcon@2x.png */,
@@ -228,6 +259,44 @@
 				A414E76C18EDF57D00943AF9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A470E8A918F02AA300D5071C /* CBC News */ = {
+			isa = PBXGroup;
+			children = (
+				A470E8AA18F02AA300D5071C /* CBC1.PNG */,
+				A470E8AB18F02AA300D5071C /* CBC2.PNG */,
+				A470E8AC18F02AA300D5071C /* CBC3.PNG */,
+				A470E8AD18F02AA300D5071C /* CBC4.PNG */,
+				A470E8AE18F02AA300D5071C /* CBC5.PNG */,
+				A470E8AF18F02AA300D5071C /* CBC6.PNG */,
+				A470E8B018F02AA300D5071C /* CBC7.PNG */,
+				A470E8B118F02AA300D5071C /* CBC8.PNG */,
+			);
+			name = "CBC News";
+			path = "Assets/CBC News";
+			sourceTree = "<group>";
+		};
+		A470E8B218F02AA300D5071C /* Kik-Tech-News */ = {
+			isa = PBXGroup;
+			children = (
+				A470E8B318F02AA300D5071C /* TechNews1.PNG */,
+				A470E8B418F02AA300D5071C /* TechNews2.PNG */,
+				A470E8B518F02AA300D5071C /* TechNews3.PNG */,
+			);
+			name = "Kik-Tech-News";
+			path = "Assets/Kik-Tech-News";
+			sourceTree = "<group>";
+		};
+		A470E8B618F02AA300D5071C /* Kik-Your-Memes */ = {
+			isa = PBXGroup;
+			children = (
+				A470E8B718F02AA300D5071C /* Meme1.PNG */,
+				A470E8B818F02AA300D5071C /* Meme2.PNG */,
+				A470E8B918F02AA300D5071C /* Meme3.PNG */,
+			);
+			name = "Kik-Your-Memes";
+			path = "Assets/Kik-Your-Memes";
 			sourceTree = "<group>";
 		};
 		A48EDA4418EE2CD80014DD8C /* iPad */ = {
@@ -363,19 +432,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A470E8C118F02AA300D5071C /* CBC8.PNG in Resources */,
+				A470E8C018F02AA300D5071C /* CBC7.PNG in Resources */,
 				A4F17B9A18EF42790077C1E2 /* iPhone5_3.png in Resources */,
+				A470E8BD18F02AA300D5071C /* CBC4.PNG in Resources */,
 				A4F17B9818EF42790077C1E2 /* iPhone5_1.png in Resources */,
 				A4F17B9118EF41CD0077C1E2 /* ProjectCollectionViewCell.xib in Resources */,
+				A470E8BE18F02AA300D5071C /* CBC5.PNG in Resources */,
 				A414E75D18EDF57D00943AF9 /* Images.xcassets in Resources */,
+				A470E8BA18F02AA300D5071C /* CBC1.PNG in Resources */,
+				A470E8C318F02AA300D5071C /* TechNews2.PNG in Resources */,
+				A470E8C618F02AA300D5071C /* Meme2.PNG in Resources */,
 				A47573AA18EE6B47000B3BC3 /* profileImage.jpeg in Resources */,
 				A475837A18EEECE500F7880A /* Main-iPad.storyboard in Resources */,
+				A470E8C418F02AA300D5071C /* TechNews3.PNG in Resources */,
 				A4F17B9918EF42790077C1E2 /* iPhone5_2.png in Resources */,
+				A470E8BC18F02AA300D5071C /* CBC3.PNG in Resources */,
+				A470E8C718F02AA300D5071C /* Meme3.PNG in Resources */,
 				A44DC54218EDF6FD0016B43C /* MainViewCell.xib in Resources */,
+				A470E8C518F02AA300D5071C /* Meme1.PNG in Resources */,
 				A44DC54718EE01070016B43C /* shopify-bag-100x100.png in Resources */,
 				A4F17B9B18EF42790077C1E2 /* iPhone5_4.png in Resources */,
 				A414E74F18EDF57D00943AF9 /* InfoPlist.strings in Resources */,
 				A48EDA4918EE34B60014DD8C /* MainCollectionViewCelliPad.xib in Resources */,
+				A470E8C218F02AA300D5071C /* TechNews1.PNG in Resources */,
 				A44DC54918EE02A20016B43C /* RemembrIcon@2x.png in Resources */,
+				A470E8BF18F02AA300D5071C /* CBC6.PNG in Resources */,
+				A470E8BB18F02AA300D5071C /* CBC2.PNG in Resources */,
 				A414E75818EDF57D00943AF9 /* Main.storyboard in Resources */,
 				A4F17B9C18EF42790077C1E2 /* iPhone5_5.png in Resources */,
 			);

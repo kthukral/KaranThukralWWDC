@@ -52,12 +52,20 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 2;
+    return 4;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     ProjectMasterCollectionViewCell *project = [collectionView dequeueReusableCellWithReuseIdentifier:@"ProjectMasterCollectionViewCell" forIndexPath:indexPath];
-    [project setUpCellForProject:nil];
+    if (indexPath.row == 0) {
+        [project setUpCellForProject:@"Remembr!"];
+    } else if (indexPath.row == 1){
+        [project setUpCellForProject:@"CBC News"];
+    } else if (indexPath.row == 2){
+        [project setUpCellForProject:@"Kik Tech News"];
+    } else if (indexPath.row == 3){
+        [project setUpCellForProject:@"Kik Your Memes"];
+    }
     return project;
 }
 

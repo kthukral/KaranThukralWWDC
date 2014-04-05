@@ -11,7 +11,7 @@
 @interface ProjectMasterCollectionViewCell : UICollectionViewCell <UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *screenshotsCollectionView;
-
+@property (strong, nonatomic) NSString *projectName;
 - (void)setUpCellForProject:(NSString *)projectName;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
