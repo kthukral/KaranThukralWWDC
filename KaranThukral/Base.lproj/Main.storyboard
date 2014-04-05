@@ -49,40 +49,38 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="115" id="seu-Up-V7Z"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PnQ-Tb-za0">
-                                        <rect key="frame" x="175" y="45" width="46" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PnQ-Tb-za0">
+                                        <rect key="frame" x="175" y="40" width="40" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Email">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
+                                        <state key="normal" title="Email" image="Email.png"/>
                                         <connections>
                                             <action selector="emailMe:" destination="eye-8d-ZwA" eventType="touchUpInside" id="4fA-9b-DmV"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7W-we-y8q">
-                                        <rect key="frame" x="175" y="83" width="46" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7W-we-y8q">
+                                        <rect key="frame" x="175" y="83" width="40" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Git">
+                                        <state key="normal" title="Git" image="GitHub.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="checkoutMyGit:" destination="eye-8d-ZwA" eventType="touchUpInside" id="K6l-VG-KF9"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmR-kP-t6R">
-                                        <rect key="frame" x="239" y="45" width="46" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmR-kP-t6R">
+                                        <rect key="frame" x="233" y="40" width="40" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Website">
+                                        <state key="normal" title="Website" image="Website.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="checkoutMyWebsite:" destination="eye-8d-ZwA" eventType="touchUpInside" id="nZs-Eb-KAg"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yb4-TC-zmQ">
-                                        <rect key="frame" x="239" y="83" width="46" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yb4-TC-zmQ">
+                                        <rect key="frame" x="233" y="83" width="40" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Linkedin">
+                                        <state key="normal" title="Linkedin" image="Linkedin.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -90,7 +88,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.49803921580314636" green="0.49803921580314636" blue="0.49803921580314636" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="mHI-qN-osV" secondAttribute="bottom" constant="23" id="F16-9X-3Cb"/>
                                     <constraint firstItem="mHI-qN-osV" firstAttribute="leading" secondItem="FpH-gB-iU7" secondAttribute="leading" constant="20" id="PbZ-zs-Dt8"/>
@@ -320,6 +318,10 @@ I would love the oppurtunity to attend WWDC 2014 because it would be an amazing 
         </scene>
     </scenes>
     <resources>
+        <image name="Email.png" width="200" height="200"/>
+        <image name="GitHub.png" width="200" height="200"/>
+        <image name="Linkedin.png" width="200" height="200"/>
+        <image name="Website.png" width="201" height="201"/>
         <image name="profileImage.jpeg" width="500" height="500"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

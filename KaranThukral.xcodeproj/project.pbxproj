@@ -49,6 +49,14 @@
 		A470E8DE18F0386700D5071C /* TeamDave.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A470E8DD18F0386700D5071C /* TeamDave.jpg */; };
 		A470E8E118F03F7800D5071C /* ProjectCollectionViewCelliPad.m in Sources */ = {isa = PBXBuildFile; fileRef = A470E8E018F03F7800D5071C /* ProjectCollectionViewCelliPad.m */; };
 		A470E8E318F03F8E00D5071C /* ProjectCollectionViewCelliPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A470E8E218F03F8E00D5071C /* ProjectCollectionViewCelliPad.xib */; };
+		A470E8ED18F049FE00D5071C /* Email.png in Resources */ = {isa = PBXBuildFile; fileRef = A470E8E518F049FE00D5071C /* Email.png */; };
+		A470E8EE18F049FE00D5071C /* Email@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A470E8E618F049FE00D5071C /* Email@2x.png */; };
+		A470E8EF18F049FE00D5071C /* GitHub.png in Resources */ = {isa = PBXBuildFile; fileRef = A470E8E718F049FE00D5071C /* GitHub.png */; };
+		A470E8F018F049FE00D5071C /* GitHub@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A470E8E818F049FE00D5071C /* GitHub@2x.png */; };
+		A470E8F118F049FE00D5071C /* Linkedin.png in Resources */ = {isa = PBXBuildFile; fileRef = A470E8E918F049FE00D5071C /* Linkedin.png */; };
+		A470E8F218F049FE00D5071C /* Linkedin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A470E8EA18F049FE00D5071C /* Linkedin@2x.png */; };
+		A470E8F318F049FE00D5071C /* Website.png in Resources */ = {isa = PBXBuildFile; fileRef = A470E8EB18F049FE00D5071C /* Website.png */; };
+		A470E8F418F049FE00D5071C /* Website@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A470E8EC18F049FE00D5071C /* Website@2x.png */; };
 		A47573A518EE62E0000B3BC3 /* KTNavigationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A47573A418EE62E0000B3BC3 /* KTNavigationDelegate.m */; };
 		A47573A818EE6452000B3BC3 /* KTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A47573A718EE6452000B3BC3 /* KTNavigationController.m */; };
 		A475837818EEEBCA00F7880A /* WorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A475837718EEEBCA00F7880A /* WorkViewController.m */; };
@@ -119,6 +127,14 @@
 		A470E8DF18F03F7800D5071C /* ProjectCollectionViewCelliPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectCollectionViewCelliPad.h; sourceTree = "<group>"; };
 		A470E8E018F03F7800D5071C /* ProjectCollectionViewCelliPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectCollectionViewCelliPad.m; sourceTree = "<group>"; };
 		A470E8E218F03F8E00D5071C /* ProjectCollectionViewCelliPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectCollectionViewCelliPad.xib; sourceTree = "<group>"; };
+		A470E8E518F049FE00D5071C /* Email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Email.png; sourceTree = "<group>"; };
+		A470E8E618F049FE00D5071C /* Email@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Email@2x.png"; sourceTree = "<group>"; };
+		A470E8E718F049FE00D5071C /* GitHub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GitHub.png; sourceTree = "<group>"; };
+		A470E8E818F049FE00D5071C /* GitHub@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GitHub@2x.png"; sourceTree = "<group>"; };
+		A470E8E918F049FE00D5071C /* Linkedin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Linkedin.png; sourceTree = "<group>"; };
+		A470E8EA18F049FE00D5071C /* Linkedin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Linkedin@2x.png"; sourceTree = "<group>"; };
+		A470E8EB18F049FE00D5071C /* Website.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Website.png; sourceTree = "<group>"; };
+		A470E8EC18F049FE00D5071C /* Website@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Website@2x.png"; sourceTree = "<group>"; };
 		A47573A318EE62E0000B3BC3 /* KTNavigationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTNavigationDelegate.h; sourceTree = "<group>"; };
 		A47573A418EE62E0000B3BC3 /* KTNavigationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTNavigationDelegate.m; sourceTree = "<group>"; };
 		A47573A618EE6452000B3BC3 /* KTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTNavigationController.h; sourceTree = "<group>"; };
@@ -231,6 +247,7 @@
 		A414E74B18EDF57D00943AF9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A470E8E418F049FE00D5071C /* SocialMediaIcons */,
 				A470E8DD18F0386700D5071C /* TeamDave.jpg */,
 				A470E8A918F02AA300D5071C /* CBC News */,
 				A470E8B218F02AA300D5071C /* Kik-Tech-News */,
@@ -301,6 +318,22 @@
 			);
 			name = "Kik-Your-Memes";
 			path = "Assets/Kik-Your-Memes";
+			sourceTree = "<group>";
+		};
+		A470E8E418F049FE00D5071C /* SocialMediaIcons */ = {
+			isa = PBXGroup;
+			children = (
+				A470E8E518F049FE00D5071C /* Email.png */,
+				A470E8E618F049FE00D5071C /* Email@2x.png */,
+				A470E8E718F049FE00D5071C /* GitHub.png */,
+				A470E8E818F049FE00D5071C /* GitHub@2x.png */,
+				A470E8E918F049FE00D5071C /* Linkedin.png */,
+				A470E8EA18F049FE00D5071C /* Linkedin@2x.png */,
+				A470E8EB18F049FE00D5071C /* Website.png */,
+				A470E8EC18F049FE00D5071C /* Website@2x.png */,
+			);
+			name = SocialMediaIcons;
+			path = Assets/SocialMediaIcons;
 			sourceTree = "<group>";
 		};
 		A48EDA4418EE2CD80014DD8C /* iPad */ = {
@@ -442,6 +475,8 @@
 				A470E8D818F035BD00D5071C /* Meme1.PNG in Resources */,
 				A470E8D918F035BD00D5071C /* Meme2.PNG in Resources */,
 				A470E8DA18F035BD00D5071C /* Meme3.PNG in Resources */,
+				A470E8F018F049FE00D5071C /* GitHub@2x.png in Resources */,
+				A470E8F418F049FE00D5071C /* Website@2x.png in Resources */,
 				A470E8D318F035B600D5071C /* iPhone5_1.png in Resources */,
 				A470E8D418F035B600D5071C /* iPhone5_2.png in Resources */,
 				A470E8D518F035B600D5071C /* iPhone5_3.png in Resources */,
@@ -452,7 +487,11 @@
 				A470E8D218F035AC00D5071C /* TechNews3.PNG in Resources */,
 				A470E8C818F035A500D5071C /* CBC1.PNG in Resources */,
 				A470E8C918F035A500D5071C /* CBC2.PNG in Resources */,
+				A470E8F118F049FE00D5071C /* Linkedin.png in Resources */,
+				A470E8ED18F049FE00D5071C /* Email.png in Resources */,
 				A470E8CA18F035A500D5071C /* CBC3.PNG in Resources */,
+				A470E8F318F049FE00D5071C /* Website.png in Resources */,
+				A470E8EE18F049FE00D5071C /* Email@2x.png in Resources */,
 				A470E8DE18F0386700D5071C /* TeamDave.jpg in Resources */,
 				A470E8CB18F035A500D5071C /* CBC4.PNG in Resources */,
 				A470E8CC18F035A500D5071C /* CBC5.PNG in Resources */,
@@ -463,6 +502,8 @@
 				A475837A18EEECE500F7880A /* Main-iPad.storyboard in Resources */,
 				A470E8E318F03F8E00D5071C /* ProjectCollectionViewCelliPad.xib in Resources */,
 				A44DC54218EDF6FD0016B43C /* MainViewCell.xib in Resources */,
+				A470E8F218F049FE00D5071C /* Linkedin@2x.png in Resources */,
+				A470E8EF18F049FE00D5071C /* GitHub.png in Resources */,
 				A414E74F18EDF57D00943AF9 /* InfoPlist.strings in Resources */,
 				A48EDA4918EE34B60014DD8C /* MainCollectionViewCelliPad.xib in Resources */,
 				A44DC54918EE02A20016B43C /* RemembrIcon@2x.png in Resources */,
