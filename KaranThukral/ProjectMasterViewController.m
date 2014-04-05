@@ -52,7 +52,7 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 4;
+    return 5;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -65,6 +65,8 @@
         [project setUpCellForProject:@"Kik Tech News"];
     } else if (indexPath.row == 3){
         [project setUpCellForProject:@"Kik Your Memes"];
+    } else {
+        [project setUpCellForProject:@"Team Dave"];
     }
     return project;
 }

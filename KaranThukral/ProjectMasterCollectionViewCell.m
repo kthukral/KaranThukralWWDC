@@ -38,8 +38,10 @@
 }
 
 - (void)setUpCellForProject:(NSString *)projectName{
+    
     self.projectName = projectName;
     self.titleLabel.text = projectName;
+
     
     if ([self.projectName isEqualToString:@"Remembr!"]) {
         
@@ -65,11 +67,17 @@
         self.textView.text = [self.textView.text stringByAppendingString:[NSString stringWithFormat:@"\n\n %@ \n%@",@"Website: http://www.kik-your-memes.herokuapp.com", @"Git Repo: http://hithub.com/kthukral/Kik-Your-Memes"]];
         
         self.textView.textAlignment = NSTextAlignmentCenter;
+    } else if ([self.projectName isEqualToString:@"Team Dave"]) {
+        self.screenshotsCollectionView.hidden = YES;
+        self.imageView.image = [UIImage imageNamed:@"TeamDave.jpg"];
+        self.textView.text = @"I mentored a FIRST Robotics team at a high school in Waterloo, ON for the 2014 season. The game this year: https://www.youtube.com/watch?v=f5zWzICG5to . I along with the other mentors helped the students design, build, program the robot and also work on the community outreach and fund raising efforts. We have qualified for the World Championships at the end of April in St Louis, MO. \n" @"Website: http://www.teamdave.ca";
+        self.textView.textAlignment = NSTextAlignmentCenter;
     }
-
+    
     [self.screenshotsCollectionView registerClass:[ProjectCollectionViewCell class] forCellWithReuseIdentifier:@"ProjectCollectionViewCell"];
     self.screenshotsCollectionView.delegate = self;
     self.screenshotsCollectionView.dataSource = self;
+
     [self.screenshotsCollectionView reloadData];
 }
 
@@ -97,28 +105,24 @@
         
         NSString *baseName = @"iPhone5_";
         baseName = [baseName stringByAppendingString:[NSString stringWithFormat:@"%d%@", indexPath.row+1,@".png"]];
-        projectCell.imageView.image = nil;
         projectCell.imageView.image = [UIImage imageNamed:baseName];
     
     } else if ([self.projectName isEqualToString:@"CBC News"]){
         
         NSString *baseName = @"CBC";
-        baseName = [baseName stringByAppendingString:[NSString stringWithFormat:@"%d%@", indexPath.row+1,@".png"]];
-        projectCell.imageView.image = nil;
+        baseName = [baseName stringByAppendingString:[NSString stringWithFormat:@"%d%@", indexPath.row+1,@".PNG"]];
         projectCell.imageView.image = [UIImage imageNamed:baseName];
         
     } else if ([self.projectName isEqualToString:@"Kik Tech News"]){
         
         NSString *baseName = @"TechNews";
-        baseName = [baseName stringByAppendingString:[NSString stringWithFormat:@"%d%@", indexPath.row+1,@".png"]];
-        projectCell.imageView.image = nil;
+        baseName = [baseName stringByAppendingString:[NSString stringWithFormat:@"%d%@", indexPath.row+1,@".PNG"]];
         projectCell.imageView.image = [UIImage imageNamed:baseName];
 
     } else if ([self.projectName isEqualToString:@"Kik Your Memes"]) {
         
         NSString *baseName = @"Meme";
-        baseName = [baseName stringByAppendingString:[NSString stringWithFormat:@"%d%@", indexPath.row+1,@".png"]];
-        projectCell.imageView.image = nil;
+        baseName = [baseName stringByAppendingString:[NSString stringWithFormat:@"%d%@", indexPath.row+1,@".PNG"]];
         projectCell.imageView.image = [UIImage imageNamed:baseName];
         
     }
