@@ -57,6 +57,9 @@
 		A470E8F218F049FE00D5071C /* Linkedin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A470E8EA18F049FE00D5071C /* Linkedin@2x.png */; };
 		A470E8F318F049FE00D5071C /* Website.png in Resources */ = {isa = PBXBuildFile; fileRef = A470E8EB18F049FE00D5071C /* Website.png */; };
 		A470E8F418F049FE00D5071C /* Website@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A470E8EC18F049FE00D5071C /* Website@2x.png */; };
+		A470E8F618F04F2900D5071C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A470E8F518F04F2900D5071C /* MessageUI.framework */; };
+		A470E8F918F056F400D5071C /* CBCLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A470E8F718F056F400D5071C /* CBCLogo.jpg */; };
+		A470E8FA18F056F400D5071C /* kikLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = A470E8F818F056F400D5071C /* kikLogo.png */; };
 		A47573A518EE62E0000B3BC3 /* KTNavigationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A47573A418EE62E0000B3BC3 /* KTNavigationDelegate.m */; };
 		A47573A818EE6452000B3BC3 /* KTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A47573A718EE6452000B3BC3 /* KTNavigationController.m */; };
 		A475837818EEEBCA00F7880A /* WorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A475837718EEEBCA00F7880A /* WorkViewController.m */; };
@@ -135,6 +138,9 @@
 		A470E8EA18F049FE00D5071C /* Linkedin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Linkedin@2x.png"; sourceTree = "<group>"; };
 		A470E8EB18F049FE00D5071C /* Website.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Website.png; sourceTree = "<group>"; };
 		A470E8EC18F049FE00D5071C /* Website@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Website@2x.png"; sourceTree = "<group>"; };
+		A470E8F518F04F2900D5071C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		A470E8F718F056F400D5071C /* CBCLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = CBCLogo.jpg; path = Assets/CBCLogo.jpg; sourceTree = "<group>"; };
+		A470E8F818F056F400D5071C /* kikLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kikLogo.png; path = Assets/kikLogo.png; sourceTree = "<group>"; };
 		A47573A318EE62E0000B3BC3 /* KTNavigationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTNavigationDelegate.h; sourceTree = "<group>"; };
 		A47573A418EE62E0000B3BC3 /* KTNavigationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTNavigationDelegate.m; sourceTree = "<group>"; };
 		A47573A618EE6452000B3BC3 /* KTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTNavigationController.h; sourceTree = "<group>"; };
@@ -171,6 +177,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A470E8F618F04F2900D5071C /* MessageUI.framework in Frameworks */,
 				A414E74718EDF57D00943AF9 /* CoreGraphics.framework in Frameworks */,
 				A414E74918EDF57D00943AF9 /* UIKit.framework in Frameworks */,
 				A414E74518EDF57D00943AF9 /* Foundation.framework in Frameworks */,
@@ -212,6 +219,7 @@
 		A414E74318EDF57D00943AF9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A470E8F518F04F2900D5071C /* MessageUI.framework */,
 				A414E74418EDF57D00943AF9 /* Foundation.framework */,
 				A414E74618EDF57D00943AF9 /* CoreGraphics.framework */,
 				A414E74818EDF57D00943AF9 /* UIKit.framework */,
@@ -247,6 +255,8 @@
 		A414E74B18EDF57D00943AF9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A470E8F718F056F400D5071C /* CBCLogo.jpg */,
+				A470E8F818F056F400D5071C /* kikLogo.png */,
 				A470E8E418F049FE00D5071C /* SocialMediaIcons */,
 				A470E8DD18F0386700D5071C /* TeamDave.jpg */,
 				A470E8A918F02AA300D5071C /* CBC News */,
@@ -484,6 +494,7 @@
 				A470E8D718F035B600D5071C /* iPhone5_5.png in Resources */,
 				A470E8D018F035AC00D5071C /* TechNews1.PNG in Resources */,
 				A470E8D118F035AC00D5071C /* TechNews2.PNG in Resources */,
+				A470E8FA18F056F400D5071C /* kikLogo.png in Resources */,
 				A470E8D218F035AC00D5071C /* TechNews3.PNG in Resources */,
 				A470E8C818F035A500D5071C /* CBC1.PNG in Resources */,
 				A470E8C918F035A500D5071C /* CBC2.PNG in Resources */,
@@ -496,6 +507,7 @@
 				A470E8CB18F035A500D5071C /* CBC4.PNG in Resources */,
 				A470E8CC18F035A500D5071C /* CBC5.PNG in Resources */,
 				A470E8CD18F035A500D5071C /* CBC6.PNG in Resources */,
+				A470E8F918F056F400D5071C /* CBCLogo.jpg in Resources */,
 				A470E8CE18F035A600D5071C /* CBC7.PNG in Resources */,
 				A470E8CF18F035A600D5071C /* CBC8.PNG in Resources */,
 				A414E75D18EDF57D00943AF9 /* Images.xcassets in Resources */,

@@ -35,7 +35,8 @@
 */
 
 - (void)prepareForReuse {
-    self.projectName = nil;
+    self.screenshotsCollectionView.hidden = NO;
+    self.imageView.hidden = YES;
 }
 
 - (void)setUpCellForProject:(NSString *)projectName{
@@ -70,6 +71,7 @@
         self.textView.textAlignment = NSTextAlignmentCenter;
     } else if ([self.projectName isEqualToString:@"Team Dave"]) {
         self.screenshotsCollectionView.hidden = YES;
+        self.imageView.hidden = NO;
         self.imageView.image = [UIImage imageNamed:@"TeamDave.jpg"];
         self.textView.text = @"I mentored a FIRST Robotics team at a high school in Waterloo, ON for the 2014 season. The game this year: https://www.youtube.com/watch?v=f5zWzICG5to . I along with the other mentors helped the students design, build, program the robot and also work on the community outreach and fund raising efforts. We have qualified for the World Championships at the end of April in St Louis, MO. \n" @"Website: http://www.teamdave.ca";
         self.textView.textAlignment = NSTextAlignmentCenter;

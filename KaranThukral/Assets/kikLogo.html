@@ -1,0 +1,801 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-5.newrelic.com","errorBeacon":"jserror.newrelic.com","licenseKey":"bc12d0ca7c","applicationID":"1887052","transactionName":"IlgMRUFXWFhWEE5XRQ5ZFm5VWVddXQVOUkISQw1cVkpH","queueTime":0,"applicationTime":32,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-378.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function t(n,e,o){function r(a){if(!e[a]){var i=e[a]={exports:{}};n[a][0].call(i.exports,function(t){var e=n[a][1][t];return r(e?e:t)},i,i.exports,t,n,e,o)}return e[a].exports}for(var a=0;a<o.length;a++)r(o[a]);return r}({D5DuLP:[function(t,n){function e(t,n){var e=o[t];return e?e.apply(this,n):(r[t]||(r[t]=[]),void r[t].push(n))}var o={},r={};n.exports=e,e.queues=r,e.handlers=o},{}],handle:[function(t,n){n.exports=t("D5DuLP")},{}],G9z0Bl:[function(t,n){function e(){var t=d.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID){d.proto="https"===c.split(":")[0]||t.sslForHttp?"https://":"http://",i("mark",["onload",a()]);var n=u.createElement("script");n.src=d.proto+t.agent,u.body.appendChild(n)}}function o(){"complete"===u.readyState&&r()}function r(){i("mark",["domContent",a()])}function a(){return(new Date).getTime()}var i=t("handle"),s=window,u=s.document,p="addEventListener",l="attachEvent",c=(""+location).split("?")[0],d=n.exports={offset:a(),origin:c,features:[]};u[p]?(u[p]("DOMContentLoaded",r,!1),s[p]("load",e,!1)):(u[l]("onreadystatechange",o),s[l]("onload",e)),i("mark",["firstbyte",a()])},{handle:"D5DuLP"}],loader:[function(t,n){n.exports=t("G9z0Bl")},{}]},{},["G9z0Bl"]);</script>
+    <!-- force IE browsers in compatibility mode to use their most aggressive rendering engine -->
+
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>StatusPage.io - Hosted Status Pages for Your Company - Customers</title>
+
+    <!-- Mobile viewport optimization h5bp.com/ad -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+      <meta name="viewport" content="width=1300px">
+
+    <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+    <meta http-equiv="cleartype" content="on">    
+
+    <!-- needs to be towards the top and definitely in the <head> -->
+      <script src="//cdn.optimizely.com/js/5238151241007104.js"></script>
+
+    <!-- touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//dka575ofm4ao0.cloudfront.net/assets/base/apple-touch-icon-144x144-precomposed-739d82f5ccb6a4a328d7de1b8c060f3a.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="//dka575ofm4ao0.cloudfront.net/assets/base/apple-touch-icon-114x114-precomposed-26a372c01586403d41f424f4108149c5.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//dka575ofm4ao0.cloudfront.net/assets/base/apple-touch-icon-72x72-precomposed-165d6b7fef32adc2bcd748afdd14808e.png" />
+    <link rel="apple-touch-icon-precomposed" href="//dka575ofm4ao0.cloudfront.net/assets/base/apple-touch-icon-57x57-precomposed-4237d57e25c04950dc6a4a266df5af96.png" />
+  
+    <meta content="pk_nJqsBQM6Nzl9uHnxbmYlJ85IXM3k8" name="stripe-key" />
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="YktWxoYnQtHSU44SJPd8t5Cc/xsOm7fJ+j9rmL+uTKA=" name="csrf-token" />
+
+    <!-- Le fonts -->
+<style>
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaLight.eot?host=www.statuspage.io');
+    src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaLight.eot?host=www.statuspage.io#iefix') format('embedded-opentype'),
+         url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaLight.woff?host=www.statuspage.io') format('woff'),
+         url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaLight.ttf?host=www.statuspage.io') format('truetype');
+    font-weight:300;
+    font-style:normal;
+  }
+   
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegular.eot?host=www.statuspage.io');
+    src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegular.eot?host=www.statuspage.io#iefix') format('embedded-opentype'),
+         url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegular.woff?host=www.statuspage.io') format('woff'),
+         url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegular.ttf?host=www.statuspage.io') format('truetype');
+    font-weight:400;
+    font-style:normal;
+  }
+   
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegularIt.eot?host=www.statuspage.io');
+    src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegularIt.eot?host=www.statuspage.io#iefix') format('embedded-opentype'),
+         url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegularIt.woff?host=www.statuspage.io') format('woff'),
+         url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegularIt.ttf?host=www.statuspage.io') format('truetype');
+    font-weight:400;
+    font-style:italic;
+  }
+   
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaSemibold.eot?host=www.statuspage.io');
+    src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaSemibold.eot?host=www.statuspage.io#iefix') format('embedded-opentype'),
+         url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaSemibold.woff?host=www.statuspage.io') format('woff'),
+         url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaSemibold.ttf?host=www.statuspage.io') format('truetype');
+    font-weight:500;
+    font-style:normal;
+  }
+   
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaBold.eot?host=www.statuspage.io');
+    src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaBold.eot?host=www.statuspage.io#iefix') format('embedded-opentype'),
+         url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaBold.woff?host=www.statuspage.io') format('woff'),
+         url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaBold.ttf?host=www.statuspage.io') format('truetype');
+    font-weight:700;
+    font-style:normal;
+  }
+</style>
+
+      <link href="//get.pictos.cc/fonts/2373/1" rel="stylesheet" type="text/css">
+
+    <!-- Le styles -->
+    <link href="//dka575ofm4ao0.cloudfront.net/assets/application-bfe30f0c8026785d51aeac1ac8028539.css" media="all" rel="stylesheet" />
+
+    <!-- Le JS notifier for Honeybadger -->
+
+    <!-- Le HTML5 shim -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="front_facing customers">
+    
+      
+
+  <div class="layout-header logged_out">
+    <div class="container">
+      <a class="logo" href="https://www.statuspage.io"><img alt="Common" src="//dka575ofm4ao0.cloudfront.net/assets/base/logos/common-2e54892c513ac60ae3feac266066aa83.png" /></a>
+      <nav>
+        <a class="" href="/">Home</a>
+        <a class="" href="/tour">Features</a>
+        <a class="" href="/pricing">Pricing</a>
+        <a class="active" href="/customers">Customers</a>
+          <a href="https://manage.statuspage.io/login">Log In</a>
+          <a class="cpt-button size-small style-primary" href="https://manage.statuspage.io/signup">Signup Now</a>
+      </nav>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+
+
+
+  <div class="layout-content front-facing customers">
+	
+
+<center class="partial-tabs-nav top customers beige" data-js-hook="partial-tabs-nav">
+  <div class="container">
+    <ul>
+        <li class="active" data-related-section="saas">
+          <i>J</i>
+          SaaS Companies
+        </li>
+        <li data-related-section="developer">
+          <i>ö</i>
+          Dev Tool Companies
+        </li>
+        <li data-related-section="universities">
+          <i>~</i>
+          Universities
+        </li>
+        <li data-related-section="internal">
+          <i>+</i>
+          Private/Internal Usage
+        </li>
+    </ul>
+  </div>
+</center>
+
+
+	<div class="container">
+		<div class="content-sections-container">
+			<div class="content-section saas active" data-js-hook="content-section" data-section-name="saas">
+  <div class="row marquee">
+    <div class="sn-container span5" style="max-height:562px;">
+      <a href="http://status.uservoice.com" target="_blank"><img alt="Marquee uservoice" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/saas/marquee-uservoice-d8815c8ec1c06b9f9d950972e6cfb180.jpg" /></a>
+    </div>
+    <div class="text span7">
+      <div class="lead">
+        UserVoice, one of the leading SaaS customer service tools, needed a better way to to let their own customers know of unscheduled downtime.   
+      </div>
+      <div class="middle">
+        <h5>The Problem</h5>
+        For over 5 years, UserVoice used their company blog to post information about backend incidents. While this implementation technically worked, it became confusing to visitors, and past incidents competed for attention with other important product updates.
+      </div>
+      <div class="middle">
+        <h5>The Solution</h5>
+        Within a week of evaluating StatusPage.io, UserVoice decided to separate their product blog from all incidents, launching <a href="http://status.uservoice.com">status.uservoice.com</a>, and integrating their product status directly into their app. Now, thousands of UserVoice customers have a dedicated source of truth for up to the minute system status information.
+      </div>
+      <div class="quote-container">
+        <img alt="Quote ted" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/saas/quote-ted-3712447688da1b757c717aa63acdcabc.jpg" />
+        <div class="quote">
+          "StatusPage.io is an awesome tool for informing customers about service issues without cluttering product announcements and other peacetime posts."<br>
+          <span class="attribution">
+            — <strong>Ted Choper, Head of Customer Success, UserVoice</strong>
+            </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="several-quotes-container row">
+    <div class="span4">
+      <div class="logo-container">
+        <a href="http://status.kissmetrics.com" target="_blank"><img alt="Quote logo kissmetrics" class="logo" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/homepage/quote-logo-kissmetrics-45fc739a9dd9db0eab595b40dd756d83.png" /></a>
+      </div>
+      <div class="quote">
+        We struggled to provide appropriate incident communication to our customers with a homegrown status page for years. StatusPage.io provides us with the <strong>right</strong> tool for the job.
+      </div>
+      <div class="attribution-container">
+        <img alt="Quote ewdurb" class="face" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/homepage/quote-ewdurb-42a68f5d1b0e355e747b8ff4ed5d58b2.jpg" />
+        <div class="attribution">
+          Ernest Durbin<br>
+          <a href="http://kissmetrics.com">KISSmetrics</a>
+        </div>
+      </div>
+    </div>
+    <div class="span4">
+      <div class="logo-container">
+        <a href="http://status.podio.com" target="_blank"><img alt="Quote logo podio" class="logo" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/homepage/quote-logo-podio-c0c243de0736ec0884bb43d59369e50d.png" /></a>
+      </div>
+      <div class="quote">
+        Setting up a status page with New Relic and Pingdom integrations in under 10 minutes made this an easy decision for Podio. We love how effortless StatusPage has made it to publish our uptime.
+      </div>
+      <div class="attribution-container">
+        <img alt="Quote phil" class="face" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/homepage/quote-phil-08b1845c5c75e040d0e64202013d4a4e.jpeg" />
+        <div class="attribution">
+          Phil Chamber<br>
+          <a href="http://www.podio.com">Podio</a>
+        </div>
+      </div>
+    </div>
+    <div class="span4">
+      <div class="logo-container">
+        <a href="http://status.meldium.com" target="_blank"><img alt="Quote logo meldium" class="logo" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/saas/quote-logo-meldium-32705da547168fa3e8104fc93d7f1907.png" /></a>
+      </div>
+      <div class="quote">
+        Our customers depend on Meldium to do their jobs, and we need to communicate any issues to them ASAP. StatusPage lets our operators talk directly to our customers and get back to restoring service.
+      </div>
+      <div class="attribution-container">
+        <img alt="Quote brad" class="face" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/saas/quote-brad-0d95086bf406ce93f396eafb87b0f2f8.jpeg" />
+        <div class="attribution">
+          Brad Buda<br>
+          <a href="http://www.meldium.com">Meldium</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+    
+    <div class="span4">
+      <div class="logo-container">
+        <a href="http://status.customer.io" target="_blank"><img alt="Quote logo customer" class="logo" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/homepage/quote-logo-customer-20cde9ac8e17664a64d5a7a7268fc5a4.png" /></a>
+      </div>
+      <div class="quote">
+        StatusPage is a no-brainer if you have a business where people rely on up-time. Spend your engineering resources on making your product better, not building a service status page.
+      </div>
+      <div class="attribution-container">
+        <img alt="Quote colin" class="face" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/homepage/quote-colin-75bbf54765fdc227852fcc4378971724.png" />
+        <div class="attribution">
+          Colin Nederkoorn<br>
+          <a href="http://www.customer.io">Customer.io</a>
+        </div>
+      </div>
+    </div>
+    <div class="span4">
+      <div class="logo-container">
+        <a href="http://status.pingidentity.com" target="_blank"><img alt="Quote logo ping identity" class="logo" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/saas/quote-logo-ping-identity-14273ced8d1160dc02a2b038a7e51764.jpg" /></a>
+      </div>
+      <div class="quote">
+        Performance metrics on our status page are key to our commitment to transparency. It's one of the simplest ways for us to effectively communicate metrics to all our customers, and allow them to consume that information however they choose.
+      </div>
+      <div class="attribution-container">
+        <img alt="Quote beau" class="face" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/saas/quote-beau-2f943eab28aaf78e7550d2ed5fa463c0.jpg" />
+        <div class="attribution">
+          Beau Christensen<br>
+          <a href="http://www.pingidentity.com">Ping Identity</a>
+        </div>
+      </div>
+    </div>
+    <div class="span4">
+      <div class="logo-container">
+        <a href="http://status.disqus.com" target="_blank"><img alt="Quote logo disqus" class="logo" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/saas/quote-logo-disqus-18903a64c8a5cb02f4248efb961f8a6b.png" /></a>
+      </div>
+      <div class="quote">
+        StatusPage.io makes it incredibly easy for anyone across our different teams to give users a heads-up when we're having issues.
+      </div>
+      <div class="attribution-container">
+        <img alt="Quote talton" class="face" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/saas/quote-talton-38580a67c43c5590814f565b4ce45fdb.jpeg" />
+        <div class="attribution">
+          Talton Figgins<br>
+          <a href="http://www.disqus.com">Disqus</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row marquee">
+    <div class="sn-container span5" style="max-height:533px">
+      <a href="http://status.newrelic.com" target="_blank"><img alt="Marquee newrelic" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/saas/marquee-newrelic-9a38db714efb49b044953eab3f8c81fa.jpg" /></a>
+    </div>
+    <div class="text span7">
+      <div class="lead">
+        New Relic had initially built their own status page, but switched to StatusPage.io and hasn't looked back.
+      </div>
+      <div class="middle">
+        <h5>The Problem</h5>
+        New Relic put much time and effort into building their own page to display monthly and yearly uptime statistics for their various services. However, because building status pages is not a core competency of New Relic, the page was hard to use for the customer support team. Consequently, the page did not consistently represent correct system status.
+      </div>
+      <div class="middle">
+        <h5>The Solution</h5>
+        New Relic was one of StatusPage.io's early adopters soon after launch. With an easy to use management portal, the whole customer support team jumped on board with the new page, allowing New Relic to further demonstrate their commitment to customer transparency.
+      </div>
+      <div class="quote-container">
+        <img alt="Quote laura" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/saas/quote-laura-759a72de604e301ae9605ce1d426047b.jpeg" />
+        <div class="quote">
+          "StatusPage.io replaced our homegrown status page solution. They make it dead simple for us to be transparent with our customers and we love that flexibility."<br>
+          <span class="attribution">
+            — <strong>Laura Kibben, Director of Technical Support, New Relic</strong>
+            </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+</div>
+			<div class="content-section developer" data-js-hook="content-section" data-section-name="developer">
+  <div class="row marquee">
+    <div class="sn-container span5" style="max-height:653px;">
+      <a href="http://status.bitbucket.org" target="_blank"><img alt="Marquee bitbucket" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/developers/marquee-bitbucket-7998ee6b4d65592ed5da87e5bc82eecd.jpg" /></a>
+    </div>
+    <div class="text span7">
+      <div class="lead">
+        Bitbucket switched to StatusPage.io after years of using a status page built in-house. 
+      </div>
+      <div class="middle">
+        <h5>The Problem</h5>
+        When Bitbucket is unavailable, their users can't get work done - a responsiblity that Bitbucket takes very seriously. However, their initial status page mainly displayed a top level 'up' or 'down' status, when in reality, there are many moving parts to Bitbucket's system that customers needed deeper insight into.  
+      </div>
+      <div class="middle">
+        <h5>The Solution</h5>
+        Bitbucket wired up their existing monitoring checks using StatusPage.io's API to their new StatusPage, providing automated updates to the availability of their website and API, SSH access to Git and Mercurial, Git access via HTTPS, Mercurial access via HTTPS, and Source Downloads. Also, since one of the values at Atlassian is 'Open Company, No Bullshit', Bitbucket is now publishing important statistics related to how well Bitbucket is servicing thier customers such as the average response time for Git and Mercurial access.
+      </div>
+      <div class="quote-container">
+        <img alt="Quote dylan" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/developers/quote-dylan-43d51d349543fd1af649cb5fa19745e8.jpg" />
+        <div class="quote">
+          "StatusPage.io has an awesome product that integrates with all of our existing monitoring tools such as NewRelic and Pingdom. We were able to get our initial site setup in under 2 hours. They also allow a great level of customization that allowed our designer to make the site look and feel just like home."<br>
+          <span class="attribution">
+            — <strong>Dylan Etkin, Development Manager, Bitbucket</strong>
+            </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="several-quotes-container row">
+    <div class="span4">
+      <div class="logo-container">
+        <a href="http://status.testflightapp.com" target="_blank"><img alt="Quote logo testflight" class="logo" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/developers/quote-logo-testflight-8f2579d0c90bfa106b623ae1f625b804.png" /></a>
+      </div>
+      <div class="quote">
+        StatusPage.io takes the work out of providing transparency to our audience when it matters most. Automatic component updates and incident tracking! Thanks statuspage!
+      </div>
+      <div class="attribution-container">
+        <img alt="Quote eric" class="face" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/developers/quote-eric-e7691ae08d484c6367ff4d5c89f23734.jpeg" />
+        <div class="attribution">
+          Eric Toledo<br>
+          <a href="http://testflight.com">TestFlight</a>
+        </div>
+      </div>
+    </div>
+    <div class="span4">
+      <div class="logo-container">
+        <a href="http://status.parse.com" target="_blank"><img alt="Quote logo parse" class="logo" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/developers/quote-logo-parse-2894e1f341c66ea94257722cbf68f507.jpeg" /></a>
+      </div>
+      <div class="quote">
+        Having a single place to tell our customers about issues we're having makes it extremely easy to keep them in the loop at all times.
+      </div>
+      <div class="attribution-container">
+        <img alt="Quote james" class="face" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/developers/quote-james-1ba31d2a03b7ee08bfbc82cfa172b4e1.jpeg" />
+        <div class="attribution">
+          James Yu<br>
+          <a href="http://parse.com">Parse</a>
+        </div>
+      </div>
+    </div>
+    <div class="span4">
+      <div class="logo-container">
+        <a href="http://status.copperegg.com" target="_blank"><img alt="Quote logo copper egg" class="logo" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/developers/quote-logo-copper-egg-869f5293979367b325968e36d3826637.png" /></a>
+      </div>
+      <div class="quote">
+        StatusPage hits the nail on the head - simple, but all the right features we need.
+      </div>
+      <div class="attribution-container">
+        <img alt="Quote eric anderson" class="face" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/developers/quote-eric-anderson-00809f2a91e2cc69e81fd4d90e36ffd7.png" />
+        <div class="attribution">
+          Eric Anderson<br>
+          <a href="http://www.copperegg.com">Copper Egg</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="span4">
+      <div class="logo-container">
+        <a href="http://status.segment.io" target="_blank"><img alt="Quote logo segment" class="logo" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/developers/quote-logo-segment-1ab6d3404cf4441e6ae87073b051895f.png" /></a>
+      </div>
+      <div class="quote">
+        We strive to keep our customer communication as realtime as possible. StatusPage.io lets us do exactly that and gives our customers the flexibility to opt-in to notifications over email, sms, or rss.
+      </div>
+      <div class="attribution-container">
+        <img alt="Quote ilya" class="face" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/developers/quote-ilya-5fd6610a3637942bfeadd77f2c69a050.jpeg" />
+        <div class="attribution">
+          Ilya Volodarsky<br>
+          <a href="http://seg ment.io">Segment.io</a>
+        </div>
+      </div>
+    </div>
+    <div class="span4">
+      <div class="logo-container">
+        <a href="http://status.iron.io" target="_blank"><img alt="Quote logo iron" class="logo" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/homepage/quote-logo-iron-3c1dc4d6461c37fea238afad0962a48b.png" /></a>
+      </div>
+      <div class="quote">
+        We had rolled our own status page that we got rid of in favor of StatusPage.io, their product is fantastic and it's one less thing for us to build and maintain. That peace of mind is worth a lot to me.
+      </div>
+      <div class="attribution-container">
+        <img alt="Quote chad" class="face" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/homepage/quote-chad-6d5c45633d3fdd087000f60a2252c7dc.png" />
+        <div class="attribution">
+          Chad Arimura<br>
+          <a href="http://www.iron.io">Iron.io</a>
+        </div>
+      </div>
+    </div>
+    <div class="span4">
+      <div class="logo-container">
+        <a href="http://status.travis-ci.com" target="_blank"><img alt="Quote logo travis" class="logo" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/homepage/quote-logo-travis-80c9eaef9b6c65aab5b006ed063da756.png" /></a>
+      </div>
+      <div class="quote">
+        One of our key goals is to be very transparent about the operational side of Travis CI. StatusPage is a key component for that goal and enables our team to focus on serving the open source community.
+      </div>
+      <div class="attribution-container">
+        <img alt="Quote mathias" class="face" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/homepage/quote-mathias-ac1cf321d9f343f0bd8d4f25b58ff706.png" />
+        <div class="attribution">
+          Mathias Meyer<br>
+          <a href="https://travis-ci.org/">Travis CI</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+    
+    <div class="span4">
+      <div class="logo-container">
+        <a href="http://status.serverdensity.com" target="_blank"><img alt="Quote logo server density" class="logo" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/developers/quote-logo-server-density-09fa169091d9380cdbe6c8cfcb401e51.jpeg" /></a>
+      </div>
+      <div class="quote">
+        Our customers rely on Server Density for their monitoring so if there are any problems, it's important they know about it right away. StatusPage.io makes it easy for our customers to get real time notifications so they can make alternative arrangements when necessary.
+      </div>
+      <div class="attribution-container">
+        <img alt="Quote david" class="face" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/developers/quote-david-684b8cf5adeee7e775239fd9815ebcbd.png" />
+        <div class="attribution">
+          David Mytton<br>
+          <a href="https://serverdensity.com/">Server Density</a>
+        </div>
+      </div>
+    </div>
+    <div class="span4">
+      <div class="logo-container">
+        <a href="http://status.librato.com" target="_blank"><img alt="Quote logo librato" class="logo" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/developers/quote-logo-librato-dbbdb6aca01a7dc1cc1eb2d69bd5cc41.jpeg" /></a>
+      </div>
+      <div class="quote">
+        Our status page lets us be fully transparent in keeping our customers updated about the status of Librato's service. We strongly believe in picking best of breed services rather than building them internally, making StatusPage.io an easy choice.
+      </div>
+      <div class="attribution-container">
+        <img alt="Quote joe" class="face" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/developers/quote-joe-03366562032b9b1ff0240ff9b25e9078.jpeg" />
+        <div class="attribution">
+          Joe Ruscio<br>
+          <a href="http://librato.com">Librato</a>
+        </div>
+      </div>
+    </div>
+    <div class="span4">
+      <div class="logo-container">
+        <a href="http://status.keen.io" target="_blank"><img alt="Quote logo keenio" class="logo" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/developers/quote-logo-keenio-1f06476e9e2523d694430045089e88a4.png" /></a>
+      </div>
+      <div class="quote">
+        Being transparent and gaining customer trust is very important to our business. StatusPage was a quick and easy win to achieve this. Highly recommended for all API companies. 
+      </div>
+      <div class="attribution-container">
+        <img alt="Quote ryan" class="face" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/developers/quote-ryan-c293c0c2a8792267877958b25ba40458.jpg" />
+        <div class="attribution">
+          Ryan Spraetz<br>
+          <a href="http://keen.io">Keen.io</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <hr>
+
+  <div class="row marquee">
+    <div class="sn-container span5" style="max-height:586px;">
+      <a href="http://status.mailgun.com" target="_blank"><img alt="Marquee mailgun" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/developers/marquee-mailgun-70dd088635dd2e3a5eeb2f583a21a15c.jpg" /></a>
+    </div>
+    <div class="text span7">
+      <div class="lead">
+        Mailgun, one of the leading email deliverability services for developers, ditched their Pingdom uptime page for a fully featured StatusPage.io status page.
+      </div>
+      <div class="middle">
+        <h5>The Problem</h5>
+        Back in September, Mailgun realized that there may be issues that occur with its service which are not covered by simple uptime status indicators. Twitter updates were just too ephemeral and weren't getting the job done. They needed to be more transparent with their customers and provide a simple portal where customers could signup for updates and chose their method of notification.
+      </div>
+      <div class="middle">
+        <h5>The Solution</h5>
+        Mailgun set up a dedicated status page on StatusPage.io to update customers about downtime incidents. With up to the minute uptime statistics and email, sms, and webhook subscriptions, the Mailgun status page has become the status source of truth for Mailgun's thousands of customers.
+      </div>
+      <div class="quote-container">
+        <img alt="Quote taylor" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/developers/quote-taylor-15af446daee582bc0dee178c86510cc6.jpg" />
+        <div class="quote">
+          "StatusPage.io is one of those rare services that requires minimal effort and gives you a big gain in your customers' satisfaction."<br>
+          <span class="attribution">
+            — <strong>Taylor Wakefield, Co-Founder, Mailgun</strong>
+            </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+</div>
+			<div class="content-section universities" data-js-hook="content-section" data-section-name="universities">
+  <div class="row marquee">
+    <div class="sn-container span5" style="max-height:595px">
+      <a href="http://status.derby.ac.uk/" target="_blank"><img alt="Marquee derby" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/universities/marquee-derby-c5d74ae37b55198ba7a839f74b53adb1.png" /></a>
+    </div>
+    <div class="text span7">
+      <div class="lead">
+        With the shift from universities implementing software behind the firewall to buying software as a service products, university status pages are becoming a necessitiy for delivering up to the minute IT status and notifications.
+      </div>
+      <div class="middle">
+        <h5>The Problem</h5>
+        These days, most universities are moving off of internal systems and purchasing software as a service products. Without complete control over these products, universities can often leave students, faculty, and IT in the dark when it comes to software issues affecting systems such as student email, the campus network, and course resources.  
+      </div>
+      <div class="middle">
+        <h5>The Solution</h5>
+        Similar to technology companies, universities are now getting setup with status pages hosted off of their own infrastructures. They're allowing individual students, faculty, and staff to subscribe to relevant system component notifications, without ever having to write a line of code internally. 
+      </div>
+      <div class="quote-container">
+        <img alt="Quote luke" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/universities/quote-luke-c1aab8b42594cf4d98d41806c78b6f4a.jpeg" />
+        <div class="quote">
+          "Our favorite aspect of StatusPage.io is that it provides us with a clean & clear system to keep students and staff informed when they need it most."<br>
+          <span class="attribution">
+            — <strong>Luke Bradbury, Application Infrastructure Engineer, University of Derby</strong>
+            </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="logos-lattice row">
+    <div class="span4">
+      <div class="logo-container">
+        <a href="http://status.gsu.edu" target="_blank"><img alt="Quote logo gsu" class="logo" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/universities/quote-logo-gsu-44ca34588a3ae1bccb50aaac24323a35.jpeg" /></a>
+      </div>
+    </div>
+    <div class="span4">
+      <div class="logo-container">
+        <a href="http://status.engineering.ucdavis.edu/" target="_blank"><img alt="Quote logo ucdavis" class="logo" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/universities/quote-logo-ucdavis-53239279b7f1865847cd5090f4a37533.png" /></a>
+      </div>
+    </div>
+    <div class="span4">
+      <div class="logo-container">
+        <a href="http://systemstatus.sjsu.edu" target="_blank"><img alt="Quote logo sjsu" class="logo" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/universities/quote-logo-sjsu-b848c56584c1aa3756016ce4b14b6e2f.jpg" /></a>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+  
+    <div class="span4">
+      <div class="logo-container">
+        <a href="http://status.derby.ac.uk" target="_blank"><img alt="Quote logo derby" class="logo" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/universities/quote-logo-derby-ab0392105d269c4328b0ce2c738ddc15.jpg" /></a>
+      </div>
+    </div>
+    <div class="span4">
+      <div class="logo-container">
+        <a href="http://status.ilearn.mq.edu.au" target="_blank"><img alt="Quote logo macquarie" class="logo" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/universities/quote-logo-macquarie-ac7eceff77fb6e61ec2b8d285df31f72.jpg" /></a>
+      </div>
+    </div>
+    <div class="span4">
+      <div class="logo-container">
+        <img alt="Quote logo michigan" class="logo" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/universities/quote-logo-michigan-747f7bbd4bab8bbcd821ba193bd66f57.jpg" />
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+</div>
+			<div class="content-section internal" data-js-hook="content-section" data-section-name="internal">
+  <div class="row marquee">
+    <div class="sn-container span5" style="max-height:634px">
+      <img alt="Marquee zumba" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/internal/marquee-zumba-638d858250871a59b46556ded56a0190.png" />
+    </div>
+    <div class="text span7">
+      <div class="lead">
+        Internal status pages are quickly becoming a go-to source of truth for all employees to stay up to date with backend and internal IT incidents.
+      </div>
+      <div class="middle">
+        <h5>The Problem</h5>
+        When you're on call and the pager goes off, the last thing you want to be doing is emailing status updates to the rest of your team and replying to the sales guy down the hall wondering when the application is going to be back up. Unfortunately, usually the person tasked with fixing the problem is also the one being bogged down sending unneccessary status emails. 
+      </div>
+      <div class="middle">
+        <h5>The Solution</h5>
+        Companies such as Bleacher Report, Shutterstock, Kik, Monetate, and Spredfast are all using StatusPage.io as their internal hub for status updates and notifications. By allowing employees to sign up for internal notifications, these companies have eliminatated the need to send or reply to status emails. Developers can focus on fixing the problems. C-level execs can stay up to date without micromanaging. Front line customer support team can appropriately communicate with customers. All without anyone having to write or respond to an email. 
+      </div>
+      <div class="quote-container">
+        <img alt="Quote douglas" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/internal/quote-douglas-18d540d8414220f886ae280b819abeca.jpg" />
+        <div class="quote">
+          "During outages, we used to get bombarded with teammates asking "Is the site down?". Today, the first thing the Incident Commander does is update our StatusPage. No more questions. Our in office internet connections have outages, too. After seeing our StatusPage, our IT Manager asked if he could have an account. Today, instead of the whole company running to his desk, he sends updates company wide with a few clicks. He literally bought me lunch."<br>
+          <span class="attribution">
+            — <strong>Douglas Jarquin, Technology Operations Manager, Zumba Fitness</strong>
+            </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="logos-lattice row">
+    <div class="span4">
+      <div class="logo-container">
+        <img alt="Quote logo monetate" class="logo" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/internal/quote-logo-monetate-7631c51619d54de6528653f5bb6dba35.png" />
+      </div>
+    </div>
+    <div class="span4">
+      <div class="logo-container">
+        <img alt="Quote logo shutterstock" class="logo" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/internal/quote-logo-shutterstock-f566c7dcf4d4d7c768c3c95012645b02.jpg" />
+      </div>
+    </div>
+    <div class="span4">
+      <div class="logo-container">
+        <img alt="Quote logo bleacher report" class="logo" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/internal/quote-logo-bleacher-report-9ebb2885eec9039c71babe056c56d864.jpg" />
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="span4">
+      <div class="logo-container">
+        <img alt="Quote logo dsc" class="logo" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/internal/quote-logo-dsc-d0d8f0db9d2b651cf2ec30ca9fca4a23.jpg" />
+      </div>
+    </div>
+    <div class="span4">
+      <div class="logo-container">
+        <img alt="Quote logo kik" class="logo" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/internal/quote-logo-kik-c38b1f501c8079b338f1367f25fb33db.png" />
+      </div>
+    </div>
+    <div class="span4">
+      <div class="logo-container">
+        <img alt="Quote logo spredfast" class="logo" src="//dka575ofm4ao0.cloudfront.net/assets/pages/front-facing/customers/internal/quote-logo-spredfast-960219dbc9772c1bb651bb28966d59a1.png" />
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  
+</div>
+		</div>
+	</div>
+  <div class="ff-c2a">
+    Create your status page today.
+    <a class="cpt-button style-primary rounded" href="https://manage.statuspage.io/signup">Get Started with StatusPage</a>
+  </div>
+	
+
+<center class="partial-tabs-nav bottom customers beige" data-js-hook="partial-tabs-nav">
+  <div class="container">
+    <ul>
+        <li class="active" data-related-section="saas">
+          <i>J</i>
+          SaaS Companies
+        </li>
+        <li data-related-section="developer">
+          <i>ö</i>
+          Dev Tool Companies
+        </li>
+        <li data-related-section="universities">
+          <i>~</i>
+          Universities
+        </li>
+        <li data-related-section="internal">
+          <i>+</i>
+          Private/Internal Usage
+        </li>
+    </ul>
+  </div>
+</center>
+
+
+</div>
+  <div class="layout-footer clearfix">
+  <div class="container">
+    <div class="row">
+      <div class="span3">
+        <div class="header">StatusPage</div>
+        <a href="http://metastatuspage.com" target="_blank">Server Status</a>
+        <a href="https://www.statuspage.io/about" target="_blank">About Us</a>
+        <a href="http://blog.statuspage.io" target="_blank">Blog</a>
+      </div>
+      <div class="span3">
+        <div class="header">Support</div>
+        <a href="http://doers.statuspage.io/" target="_blank">API Docs</a>
+        <a href="http://help.statuspage.io/" target="_blank">Knowledge Base</a>
+        <a href="mailto:hi@statuspage.io">Email Us</a>
+      </div>
+      <div class="span3">
+        <div class="header">Legal</div>
+        <a href="https://www.statuspage.io/terms-of-service" target="_blank">Terms of Service</a>
+        <a href="https://www.statuspage.io/privacy-policy" target="_blank">Privacy Policy</a>
+        <a href="https://www.statuspage.io/security" target="_blank">Security</a>
+      </div>
+      <div class="span3">
+        <span class="pull-right">
+          <a href="https://twitter.com/statuspageio" class="twitter-follow-button" data-show-count="false">Follow @statuspageio</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <script src="//dka575ofm4ao0.cloudfront.net/assets/application-e3aed35107ebf271d8faae6b919e2557.js"></script>
+    
+
+
+<!-- FOR FLASH NOTICES -->
+
+
+
+<!-- FOR ERROR -->
+
+
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+    <script type="text/javascript">
+      var analytics=analytics||[];analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);var r=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}},i=["identify","track","trackLink","trackForm","trackClick","trackSubmit","pageview","ab","alias","ready"];for(var s=0;s<i.length;s++)analytics[i[s]]=r(i[s])};
+      analytics.load("8oi64no");
+      analytics.ready(function() {
+        if(window.location.href.indexOf('manage.') == -1) {
+          olark('api.box.show');
+        } else {
+          olark('api.box.hide');
+        }
+      });
+    </script>
+    
+  
+    <script>
+      $(function() {
+
+        SP.unloading = false;
+        $(window).unload(function() {
+          SP.unloading = true;
+        });
+
+      })
+    </script>
+
+
+    <!-- must be very last since it relies on dependencies loaded above -->
+      <script>
+    $(function() {
+      var $navEls = HRB.utils.djshook('partial-tabs-nav').find('li')
+        , $contentSections = HRB.utils.djshook('content-section')
+
+      $navEls.on('click', function() {
+        var $this = $(this)
+          , sectionName = $this.attr('data-related-section')
+
+        $navEls.removeClass('active');
+        $navEls.filter('[data-related-section="' + sectionName + '"]').addClass('active');
+
+        $contentSections.removeClass('active');
+        $contentSections.filter('[data-section-name="' + sectionName + '"]').addClass('active');
+
+        location.hash = sectionName;
+
+        $(window).trigger('resize').trigger('scroll');
+      });
+
+      if (location.hash) {
+        $navEls.filter('[data-related-section="' + location.hash.replace('#','') + '"]').click();
+      }
+    });
+
+
+
+    $(function() {
+      HRB.utils.djshook('partial-tabs-nav').find('li').on('click', function() {
+        $("html, body").animate({scrollTop: "0px"}, 500);
+      });
+    });
+  </script>
+
+
+  </body>
+</html>

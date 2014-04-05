@@ -60,14 +60,29 @@
 */
 
 - (IBAction)emailMe:(id)sender {
+    
+    MFMailComposeViewController *mailComposer = [[MFMailComposeViewController alloc] init];
+    mailComposer.mailComposeDelegate = self;
+    [mailComposer setToRecipients:[NSArray arrayWithObjects: @"mail@karanthukral.me",nil]];
+    [mailComposer setMessageBody:@"" isHTML:NO];
+    [self presentViewController:mailComposer animated:YES completion:nil];
+    
 }
 
 - (IBAction)checkoutMyGit:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://www.github.com/kthukral"]];
 }
 
 - (IBAction)checkoutMyWebsite:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://www.karanthukral.me"]];
 }
 
 - (IBAction)checkoutMyLinkedin:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://ca.linkedin.com/in/thukralk/"]];
+}
+
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end
