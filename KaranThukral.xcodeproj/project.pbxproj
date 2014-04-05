@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A414E74518EDF57D00943AF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A414E74418EDF57D00943AF9 /* Foundation.framework */; };
+		A414E74718EDF57D00943AF9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A414E74618EDF57D00943AF9 /* CoreGraphics.framework */; };
+		A414E74918EDF57D00943AF9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A414E74818EDF57D00943AF9 /* UIKit.framework */; };
+		A414E74F18EDF57D00943AF9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A414E74D18EDF57D00943AF9 /* InfoPlist.strings */; };
+		A414E75118EDF57D00943AF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A414E75018EDF57D00943AF9 /* main.m */; };
+		A414E75518EDF57D00943AF9 /* KaranThukralAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A414E75418EDF57D00943AF9 /* KaranThukralAppDelegate.m */; };
+		A414E75818EDF57D00943AF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A414E75618EDF57D00943AF9 /* Main.storyboard */; };
+		A414E75B18EDF57D00943AF9 /* KaranThukralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A414E75A18EDF57D00943AF9 /* KaranThukralViewController.m */; };
+		A414E75D18EDF57D00943AF9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A414E75C18EDF57D00943AF9 /* Images.xcassets */; };
+		A414E76418EDF57D00943AF9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A414E76318EDF57D00943AF9 /* XCTest.framework */; };
+		A414E76518EDF57D00943AF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A414E74418EDF57D00943AF9 /* Foundation.framework */; };
+		A414E76618EDF57D00943AF9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A414E74818EDF57D00943AF9 /* UIKit.framework */; };
+		A414E76E18EDF57D00943AF9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A414E76C18EDF57D00943AF9 /* InfoPlist.strings */; };
+		A414E77018EDF57D00943AF9 /* KaranThukralTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A414E76F18EDF57D00943AF9 /* KaranThukralTests.m */; };
+		A44DC54018EDF6E70016B43C /* MainCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A44DC53F18EDF6E70016B43C /* MainCollectionViewCell.m */; };
+		A44DC54218EDF6FD0016B43C /* MainViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A44DC54118EDF6FD0016B43C /* MainViewCell.xib */; };
+		A44DC54518EDFC2D0016B43C /* InformationStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A44DC54418EDFC2D0016B43C /* InformationStore.m */; };
+		A44DC54718EE01070016B43C /* shopify-bag-100x100.png in Resources */ = {isa = PBXBuildFile; fileRef = A44DC54618EE01070016B43C /* shopify-bag-100x100.png */; };
+		A44DC54918EE02A20016B43C /* RemembrIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A44DC54818EE02A20016B43C /* RemembrIcon@2x.png */; };
+		A47573A518EE62E0000B3BC3 /* KTNavigationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A47573A418EE62E0000B3BC3 /* KTNavigationDelegate.m */; };
+		A47573A818EE6452000B3BC3 /* KTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A47573A718EE6452000B3BC3 /* KTNavigationController.m */; };
+		A47573AA18EE6B47000B3BC3 /* profileImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A47573A918EE6B47000B3BC3 /* profileImage.jpeg */; };
+		A475837818EEEBCA00F7880A /* WorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A475837718EEEBCA00F7880A /* WorkViewController.m */; };
+		A475837A18EEECE500F7880A /* Main-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A475837918EEECE500F7880A /* Main-iPad.storyboard */; };
+		A475837D18EEEFAB00F7880A /* WorkCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A475837C18EEEFAB00F7880A /* WorkCollectionViewCell.m */; };
+		A48EDA4718EE2DFC0014DD8C /* MainCollectionViewCelliPad.m in Sources */ = {isa = PBXBuildFile; fileRef = A48EDA4618EE2DFC0014DD8C /* MainCollectionViewCelliPad.m */; };
+		A48EDA4918EE34B60014DD8C /* MainCollectionViewCelliPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A48EDA4818EE34B60014DD8C /* MainCollectionViewCelliPad.xib */; };
+		A48EDA4E18EE37250014DD8C /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A48EDA4D18EE37250014DD8C /* AboutMeViewController.m */; };
+		A4AC1AC218EE59AA004AB201 /* AnimatedCutomTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AC1AC118EE59AA004AB201 /* AnimatedCutomTransition.m */; };
+		A4C2790718EE6066008830AD /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A48EDA4D18EE37250014DD8C /* AboutMeViewController.m */; };
+		A4F17B8F18EF41B30077C1E2 /* ProjectCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F17B8E18EF41B30077C1E2 /* ProjectCollectionViewCell.m */; };
+		A4F17B9118EF41CD0077C1E2 /* ProjectCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4F17B9018EF41CD0077C1E2 /* ProjectCollectionViewCell.xib */; };
+		A4F17B9818EF42790077C1E2 /* iPhone5_1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4F17B9318EF42790077C1E2 /* iPhone5_1.png */; };
+		A4F17B9918EF42790077C1E2 /* iPhone5_2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4F17B9418EF42790077C1E2 /* iPhone5_2.png */; };
+		A4F17B9A18EF42790077C1E2 /* iPhone5_3.png in Resources */ = {isa = PBXBuildFile; fileRef = A4F17B9518EF42790077C1E2 /* iPhone5_3.png */; };
+		A4F17B9B18EF42790077C1E2 /* iPhone5_4.png in Resources */ = {isa = PBXBuildFile; fileRef = A4F17B9618EF42790077C1E2 /* iPhone5_4.png */; };
+		A4F17B9C18EF42790077C1E2 /* iPhone5_5.png in Resources */ = {isa = PBXBuildFile; fileRef = A4F17B9718EF42790077C1E2 /* iPhone5_5.png */; };
+		A4F17B9F18EF429D0077C1E2 /* ProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F17B9E18EF429D0077C1E2 /* ProjectViewController.m */; };
+		A4F17BA218EF48090077C1E2 /* ProjectMasterCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F17BA118EF48090077C1E2 /* ProjectMasterCollectionViewCell.m */; };
+		A4F17BA518EF48600077C1E2 /* ProjectMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F17BA418EF48600077C1E2 /* ProjectMasterViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A414E76718EDF57D00943AF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A414E73918EDF57D00943AF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A414E74018EDF57D00943AF9;
+			remoteInfo = KaranThukral;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A414E74118EDF57D00943AF9 /* KaranThukral.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaranThukral.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A414E74418EDF57D00943AF9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A414E74618EDF57D00943AF9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A414E74818EDF57D00943AF9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A414E74C18EDF57D00943AF9 /* KaranThukral-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KaranThukral-Info.plist"; sourceTree = "<group>"; };
+		A414E74E18EDF57D00943AF9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A414E75018EDF57D00943AF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A414E75218EDF57D00943AF9 /* KaranThukral-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KaranThukral-Prefix.pch"; sourceTree = "<group>"; };
+		A414E75318EDF57D00943AF9 /* KaranThukralAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KaranThukralAppDelegate.h; sourceTree = "<group>"; };
+		A414E75418EDF57D00943AF9 /* KaranThukralAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KaranThukralAppDelegate.m; sourceTree = "<group>"; };
+		A414E75718EDF57D00943AF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A414E75918EDF57D00943AF9 /* KaranThukralViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KaranThukralViewController.h; sourceTree = "<group>"; };
+		A414E75A18EDF57D00943AF9 /* KaranThukralViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KaranThukralViewController.m; sourceTree = "<group>"; };
+		A414E75C18EDF57D00943AF9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A414E76218EDF57D00943AF9 /* KaranThukralTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaranThukralTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A414E76318EDF57D00943AF9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A414E76B18EDF57D00943AF9 /* KaranThukralTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KaranThukralTests-Info.plist"; sourceTree = "<group>"; };
+		A414E76D18EDF57D00943AF9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A414E76F18EDF57D00943AF9 /* KaranThukralTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KaranThukralTests.m; sourceTree = "<group>"; };
+		A44DC53E18EDF6E70016B43C /* MainCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCollectionViewCell.h; sourceTree = "<group>"; };
+		A44DC53F18EDF6E70016B43C /* MainCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainCollectionViewCell.m; sourceTree = "<group>"; };
+		A44DC54118EDF6FD0016B43C /* MainViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewCell.xib; sourceTree = "<group>"; };
+		A44DC54318EDFC2D0016B43C /* InformationStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationStore.h; sourceTree = "<group>"; };
+		A44DC54418EDFC2D0016B43C /* InformationStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationStore.m; sourceTree = "<group>"; };
+		A44DC54618EE01070016B43C /* shopify-bag-100x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "shopify-bag-100x100.png"; path = "Assets/shopify-bag-100x100.png"; sourceTree = "<group>"; };
+		A44DC54818EE02A20016B43C /* RemembrIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RemembrIcon@2x.png"; sourceTree = "<group>"; };
+		A47573A318EE62E0000B3BC3 /* KTNavigationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTNavigationDelegate.h; sourceTree = "<group>"; };
+		A47573A418EE62E0000B3BC3 /* KTNavigationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTNavigationDelegate.m; sourceTree = "<group>"; };
+		A47573A618EE6452000B3BC3 /* KTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTNavigationController.h; sourceTree = "<group>"; };
+		A47573A718EE6452000B3BC3 /* KTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTNavigationController.m; sourceTree = "<group>"; };
+		A47573A918EE6B47000B3BC3 /* profileImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = profileImage.jpeg; path = Assets/profileImage.jpeg; sourceTree = "<group>"; };
+		A475837618EEEBCA00F7880A /* WorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkViewController.h; sourceTree = "<group>"; };
+		A475837718EEEBCA00F7880A /* WorkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkViewController.m; sourceTree = "<group>"; };
+		A475837918EEECE500F7880A /* Main-iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Main-iPad.storyboard"; path = "../Main-iPad.storyboard"; sourceTree = "<group>"; };
+		A475837B18EEEFAB00F7880A /* WorkCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkCollectionViewCell.h; sourceTree = "<group>"; };
+		A475837C18EEEFAB00F7880A /* WorkCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkCollectionViewCell.m; sourceTree = "<group>"; };
+		A48EDA4518EE2DFC0014DD8C /* MainCollectionViewCelliPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCollectionViewCelliPad.h; sourceTree = "<group>"; };
+		A48EDA4618EE2DFC0014DD8C /* MainCollectionViewCelliPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainCollectionViewCelliPad.m; sourceTree = "<group>"; };
+		A48EDA4818EE34B60014DD8C /* MainCollectionViewCelliPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCollectionViewCelliPad.xib; sourceTree = "<group>"; };
+		A48EDA4C18EE37250014DD8C /* AboutMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutMeViewController.h; sourceTree = "<group>"; };
+		A48EDA4D18EE37250014DD8C /* AboutMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMeViewController.m; sourceTree = "<group>"; };
+		A4AC1AC018EE59AA004AB201 /* AnimatedCutomTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedCutomTransition.h; sourceTree = "<group>"; };
+		A4AC1AC118EE59AA004AB201 /* AnimatedCutomTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedCutomTransition.m; sourceTree = "<group>"; };
+		A4F17B8D18EF41B30077C1E2 /* ProjectCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectCollectionViewCell.h; sourceTree = "<group>"; };
+		A4F17B8E18EF41B30077C1E2 /* ProjectCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectCollectionViewCell.m; sourceTree = "<group>"; };
+		A4F17B9018EF41CD0077C1E2 /* ProjectCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectCollectionViewCell.xib; sourceTree = "<group>"; };
+		A4F17B9318EF42790077C1E2 /* iPhone5_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone5_1.png; sourceTree = "<group>"; };
+		A4F17B9418EF42790077C1E2 /* iPhone5_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone5_2.png; sourceTree = "<group>"; };
+		A4F17B9518EF42790077C1E2 /* iPhone5_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone5_3.png; sourceTree = "<group>"; };
+		A4F17B9618EF42790077C1E2 /* iPhone5_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone5_4.png; sourceTree = "<group>"; };
+		A4F17B9718EF42790077C1E2 /* iPhone5_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone5_5.png; sourceTree = "<group>"; };
+		A4F17B9D18EF429D0077C1E2 /* ProjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectViewController.h; sourceTree = "<group>"; };
+		A4F17B9E18EF429D0077C1E2 /* ProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectViewController.m; sourceTree = "<group>"; };
+		A4F17BA018EF48090077C1E2 /* ProjectMasterCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectMasterCollectionViewCell.h; sourceTree = "<group>"; };
+		A4F17BA118EF48090077C1E2 /* ProjectMasterCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectMasterCollectionViewCell.m; sourceTree = "<group>"; };
+		A4F17BA318EF48600077C1E2 /* ProjectMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectMasterViewController.h; sourceTree = "<group>"; };
+		A4F17BA418EF48600077C1E2 /* ProjectMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectMasterViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A414E73E18EDF57D00943AF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A414E74718EDF57D00943AF9 /* CoreGraphics.framework in Frameworks */,
+				A414E74918EDF57D00943AF9 /* UIKit.framework in Frameworks */,
+				A414E74518EDF57D00943AF9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A414E75F18EDF57D00943AF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A414E76418EDF57D00943AF9 /* XCTest.framework in Frameworks */,
+				A414E76618EDF57D00943AF9 /* UIKit.framework in Frameworks */,
+				A414E76518EDF57D00943AF9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A414E73818EDF57D00943AF9 = {
+			isa = PBXGroup;
+			children = (
+				A414E74A18EDF57D00943AF9 /* KaranThukral */,
+				A414E76918EDF57D00943AF9 /* KaranThukralTests */,
+				A414E74318EDF57D00943AF9 /* Frameworks */,
+				A414E74218EDF57D00943AF9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A414E74218EDF57D00943AF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A414E74118EDF57D00943AF9 /* KaranThukral.app */,
+				A414E76218EDF57D00943AF9 /* KaranThukralTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A414E74318EDF57D00943AF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A414E74418EDF57D00943AF9 /* Foundation.framework */,
+				A414E74618EDF57D00943AF9 /* CoreGraphics.framework */,
+				A414E74818EDF57D00943AF9 /* UIKit.framework */,
+				A414E76318EDF57D00943AF9 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A414E74A18EDF57D00943AF9 /* KaranThukral */ = {
+			isa = PBXGroup;
+			children = (
+				A48EDA4418EE2CD80014DD8C /* iPad */,
+				A414E75318EDF57D00943AF9 /* KaranThukralAppDelegate.h */,
+				A414E75418EDF57D00943AF9 /* KaranThukralAppDelegate.m */,
+				A414E75618EDF57D00943AF9 /* Main.storyboard */,
+				A475837918EEECE500F7880A /* Main-iPad.storyboard */,
+				A48EDA4B18EE37000014DD8C /* View Controllers */,
+				A48EDA4A18EE36EC0014DD8C /* Custom Views */,
+				A44DC54318EDFC2D0016B43C /* InformationStore.h */,
+				A44DC54418EDFC2D0016B43C /* InformationStore.m */,
+				A4AC1AC018EE59AA004AB201 /* AnimatedCutomTransition.h */,
+				A4AC1AC118EE59AA004AB201 /* AnimatedCutomTransition.m */,
+				A47573A318EE62E0000B3BC3 /* KTNavigationDelegate.h */,
+				A47573A418EE62E0000B3BC3 /* KTNavigationDelegate.m */,
+				A47573A618EE6452000B3BC3 /* KTNavigationController.h */,
+				A47573A718EE6452000B3BC3 /* KTNavigationController.m */,
+				A414E75C18EDF57D00943AF9 /* Images.xcassets */,
+				A414E74B18EDF57D00943AF9 /* Supporting Files */,
+			);
+			path = KaranThukral;
+			sourceTree = "<group>";
+		};
+		A414E74B18EDF57D00943AF9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4F17B9218EF42790077C1E2 /* Remembr iPhone 5 Screenshot */,
+				A47573A918EE6B47000B3BC3 /* profileImage.jpeg */,
+				A44DC54818EE02A20016B43C /* RemembrIcon@2x.png */,
+				A44DC54618EE01070016B43C /* shopify-bag-100x100.png */,
+				A414E74C18EDF57D00943AF9 /* KaranThukral-Info.plist */,
+				A414E74D18EDF57D00943AF9 /* InfoPlist.strings */,
+				A414E75018EDF57D00943AF9 /* main.m */,
+				A414E75218EDF57D00943AF9 /* KaranThukral-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A414E76918EDF57D00943AF9 /* KaranThukralTests */ = {
+			isa = PBXGroup;
+			children = (
+				A414E76F18EDF57D00943AF9 /* KaranThukralTests.m */,
+				A414E76A18EDF57D00943AF9 /* Supporting Files */,
+			);
+			path = KaranThukralTests;
+			sourceTree = "<group>";
+		};
+		A414E76A18EDF57D00943AF9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A414E76B18EDF57D00943AF9 /* KaranThukralTests-Info.plist */,
+				A414E76C18EDF57D00943AF9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A48EDA4418EE2CD80014DD8C /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		A48EDA4A18EE36EC0014DD8C /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				A44DC53E18EDF6E70016B43C /* MainCollectionViewCell.h */,
+				A44DC53F18EDF6E70016B43C /* MainCollectionViewCell.m */,
+				A44DC54118EDF6FD0016B43C /* MainViewCell.xib */,
+				A48EDA4518EE2DFC0014DD8C /* MainCollectionViewCelliPad.h */,
+				A48EDA4618EE2DFC0014DD8C /* MainCollectionViewCelliPad.m */,
+				A48EDA4818EE34B60014DD8C /* MainCollectionViewCelliPad.xib */,
+				A475837B18EEEFAB00F7880A /* WorkCollectionViewCell.h */,
+				A475837C18EEEFAB00F7880A /* WorkCollectionViewCell.m */,
+				A4F17B8D18EF41B30077C1E2 /* ProjectCollectionViewCell.h */,
+				A4F17B8E18EF41B30077C1E2 /* ProjectCollectionViewCell.m */,
+				A4F17B9018EF41CD0077C1E2 /* ProjectCollectionViewCell.xib */,
+				A4F17BA018EF48090077C1E2 /* ProjectMasterCollectionViewCell.h */,
+				A4F17BA118EF48090077C1E2 /* ProjectMasterCollectionViewCell.m */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
+		A48EDA4B18EE37000014DD8C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A414E75918EDF57D00943AF9 /* KaranThukralViewController.h */,
+				A414E75A18EDF57D00943AF9 /* KaranThukralViewController.m */,
+				A48EDA4C18EE37250014DD8C /* AboutMeViewController.h */,
+				A48EDA4D18EE37250014DD8C /* AboutMeViewController.m */,
+				A475837618EEEBCA00F7880A /* WorkViewController.h */,
+				A475837718EEEBCA00F7880A /* WorkViewController.m */,
+				A4F17B9D18EF429D0077C1E2 /* ProjectViewController.h */,
+				A4F17B9E18EF429D0077C1E2 /* ProjectViewController.m */,
+				A4F17BA318EF48600077C1E2 /* ProjectMasterViewController.h */,
+				A4F17BA418EF48600077C1E2 /* ProjectMasterViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A4F17B9218EF42790077C1E2 /* Remembr iPhone 5 Screenshot */ = {
+			isa = PBXGroup;
+			children = (
+				A4F17B9318EF42790077C1E2 /* iPhone5_1.png */,
+				A4F17B9418EF42790077C1E2 /* iPhone5_2.png */,
+				A4F17B9518EF42790077C1E2 /* iPhone5_3.png */,
+				A4F17B9618EF42790077C1E2 /* iPhone5_4.png */,
+				A4F17B9718EF42790077C1E2 /* iPhone5_5.png */,
+			);
+			path = "Remembr iPhone 5 Screenshot";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A414E74018EDF57D00943AF9 /* KaranThukral */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A414E77318EDF57D00943AF9 /* Build configuration list for PBXNativeTarget "KaranThukral" */;
+			buildPhases = (
+				A414E73D18EDF57D00943AF9 /* Sources */,
+				A414E73E18EDF57D00943AF9 /* Frameworks */,
+				A414E73F18EDF57D00943AF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KaranThukral;
+			productName = KaranThukral;
+			productReference = A414E74118EDF57D00943AF9 /* KaranThukral.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A414E76118EDF57D00943AF9 /* KaranThukralTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A414E77618EDF57D00943AF9 /* Build configuration list for PBXNativeTarget "KaranThukralTests" */;
+			buildPhases = (
+				A414E75E18EDF57D00943AF9 /* Sources */,
+				A414E75F18EDF57D00943AF9 /* Frameworks */,
+				A414E76018EDF57D00943AF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A414E76818EDF57D00943AF9 /* PBXTargetDependency */,
+			);
+			name = KaranThukralTests;
+			productName = KaranThukralTests;
+			productReference = A414E76218EDF57D00943AF9 /* KaranThukralTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A414E73918EDF57D00943AF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KaranThukral;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Karan Thukral";
+				TargetAttributes = {
+					A414E76118EDF57D00943AF9 = {
+						TestTargetID = A414E74018EDF57D00943AF9;
+					};
+				};
+			};
+			buildConfigurationList = A414E73C18EDF57D00943AF9 /* Build configuration list for PBXProject "KaranThukral" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A414E73818EDF57D00943AF9;
+			productRefGroup = A414E74218EDF57D00943AF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A414E74018EDF57D00943AF9 /* KaranThukral */,
+				A414E76118EDF57D00943AF9 /* KaranThukralTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A414E73F18EDF57D00943AF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4F17B9A18EF42790077C1E2 /* iPhone5_3.png in Resources */,
+				A4F17B9818EF42790077C1E2 /* iPhone5_1.png in Resources */,
+				A4F17B9118EF41CD0077C1E2 /* ProjectCollectionViewCell.xib in Resources */,
+				A414E75D18EDF57D00943AF9 /* Images.xcassets in Resources */,
+				A47573AA18EE6B47000B3BC3 /* profileImage.jpeg in Resources */,
+				A475837A18EEECE500F7880A /* Main-iPad.storyboard in Resources */,
+				A4F17B9918EF42790077C1E2 /* iPhone5_2.png in Resources */,
+				A44DC54218EDF6FD0016B43C /* MainViewCell.xib in Resources */,
+				A44DC54718EE01070016B43C /* shopify-bag-100x100.png in Resources */,
+				A4F17B9B18EF42790077C1E2 /* iPhone5_4.png in Resources */,
+				A414E74F18EDF57D00943AF9 /* InfoPlist.strings in Resources */,
+				A48EDA4918EE34B60014DD8C /* MainCollectionViewCelliPad.xib in Resources */,
+				A44DC54918EE02A20016B43C /* RemembrIcon@2x.png in Resources */,
+				A414E75818EDF57D00943AF9 /* Main.storyboard in Resources */,
+				A4F17B9C18EF42790077C1E2 /* iPhone5_5.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A414E76018EDF57D00943AF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A414E76E18EDF57D00943AF9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A414E73D18EDF57D00943AF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A44DC54518EDFC2D0016B43C /* InformationStore.m in Sources */,
+				A48EDA4718EE2DFC0014DD8C /* MainCollectionViewCelliPad.m in Sources */,
+				A4F17BA218EF48090077C1E2 /* ProjectMasterCollectionViewCell.m in Sources */,
+				A4AC1AC218EE59AA004AB201 /* AnimatedCutomTransition.m in Sources */,
+				A47573A518EE62E0000B3BC3 /* KTNavigationDelegate.m in Sources */,
+				A414E75518EDF57D00943AF9 /* KaranThukralAppDelegate.m in Sources */,
+				A475837D18EEEFAB00F7880A /* WorkCollectionViewCell.m in Sources */,
+				A4F17B9F18EF429D0077C1E2 /* ProjectViewController.m in Sources */,
+				A4F17B8F18EF41B30077C1E2 /* ProjectCollectionViewCell.m in Sources */,
+				A44DC54018EDF6E70016B43C /* MainCollectionViewCell.m in Sources */,
+				A4F17BA518EF48600077C1E2 /* ProjectMasterViewController.m in Sources */,
+				A475837818EEEBCA00F7880A /* WorkViewController.m in Sources */,
+				A47573A818EE6452000B3BC3 /* KTNavigationController.m in Sources */,
+				A48EDA4E18EE37250014DD8C /* AboutMeViewController.m in Sources */,
+				A414E75118EDF57D00943AF9 /* main.m in Sources */,
+				A414E75B18EDF57D00943AF9 /* KaranThukralViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A414E75E18EDF57D00943AF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C2790718EE6066008830AD /* AboutMeViewController.m in Sources */,
+				A414E77018EDF57D00943AF9 /* KaranThukralTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A414E76818EDF57D00943AF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A414E74018EDF57D00943AF9 /* KaranThukral */;
+			targetProxy = A414E76718EDF57D00943AF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A414E74D18EDF57D00943AF9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A414E74E18EDF57D00943AF9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A414E75618EDF57D00943AF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A414E75718EDF57D00943AF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A414E76C18EDF57D00943AF9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A414E76D18EDF57D00943AF9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A414E77118EDF57D00943AF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A414E77218EDF57D00943AF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A414E77418EDF57D00943AF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KaranThukral/KaranThukral-Prefix.pch";
+				INFOPLIST_FILE = "KaranThukral/KaranThukral-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A414E77518EDF57D00943AF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KaranThukral/KaranThukral-Prefix.pch";
+				INFOPLIST_FILE = "KaranThukral/KaranThukral-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A414E77718EDF57D00943AF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KaranThukral.app/KaranThukral";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KaranThukral/KaranThukral-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KaranThukralTests/KaranThukralTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A414E77818EDF57D00943AF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KaranThukral.app/KaranThukral";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KaranThukral/KaranThukral-Prefix.pch";
+				INFOPLIST_FILE = "KaranThukralTests/KaranThukralTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A414E73C18EDF57D00943AF9 /* Build configuration list for PBXProject "KaranThukral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A414E77118EDF57D00943AF9 /* Debug */,
+				A414E77218EDF57D00943AF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A414E77318EDF57D00943AF9 /* Build configuration list for PBXNativeTarget "KaranThukral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A414E77418EDF57D00943AF9 /* Debug */,
+				A414E77518EDF57D00943AF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A414E77618EDF57D00943AF9 /* Build configuration list for PBXNativeTarget "KaranThukralTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A414E77718EDF57D00943AF9 /* Debug */,
+				A414E77818EDF57D00943AF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A414E73918EDF57D00943AF9 /* Project object */;
+}

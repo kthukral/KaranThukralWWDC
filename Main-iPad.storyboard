@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="fDq-l1-yYf">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Karan Thukral View Controller-->
+        <scene sceneID="Npl-Bd-guR">
+            <objects>
+                <viewController id="cQg-OB-oMv" customClass="KaranThukralViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2FO-lA-kVp"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hcy-Rb-xOQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cn5-fE-IBh">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xmU-25-3yR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4IZ-NC-YVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="879" y="-262"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jO3-Po-NO4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fDq-l1-yYf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QDk-ny-W1O">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cQg-OB-oMv" kind="relationship" relationship="rootViewController" id="ORx-vx-8hn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WsX-1o-3au" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-95" y="-262"/>
+        </scene>
+        <!--About Me View Controller-->
+        <scene sceneID="JKv-KN-kjK">
+            <objects>
+                <viewController storyboardIdentifier="aboutMe" id="mwz-1f-WLB" customClass="AboutMeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BOn-F1-p9F"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bl7-9w-er0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WkP-eA-JNy">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ltJ-n7-gzp">
+                                <rect key="frame" x="0.0" y="64" width="768" height="445"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profileImage.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="WOc-No-C0J">
+                                        <rect key="frame" x="20" y="48" width="350" height="350"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLL-At-Q7E">
+                                <rect key="frame" x="0.0" y="509" width="768" height="515"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <mutableString key="text">My name is Karan Thukral and I am currently a student at the University of Waterloo studying Systems Design Engineering. 
+
+I am an extremely passionate Software Developer especially when it comes to the iOS Platform. I have been learning iOS development for the past year and in that time, I have released my own appRemembr! and worked full time as an iOS Developer at Canadian Broadcasting Coorporation. I am also going to be working as an iOS Developer at Shopify for the Summer. 
+
+I would love the oppurtunity to attend WWDC 2014 because it would be an amazing oppurtunity to learn and interact with fellow developers.
+
+                                              “Stay Hungry, Stay Foolish"
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="imageView" destination="WOc-No-C0J" id="BUp-5t-gu8"/>
+                        <outlet property="textView" destination="DLL-At-Q7E" id="IEa-eZ-Mb8"/>
+                        <outlet property="topBackgroundView" destination="ltJ-n7-gzp" id="KA6-jP-FUe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4O9-nr-Qc1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-74" y="920"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="profileImage.jpeg" width="500" height="500"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
