@@ -8,6 +8,7 @@
 
 #import "ProjectMasterCollectionViewCell.h"
 #import "ProjectCollectionViewCell.h"
+#import "ProjectCollectionViewCelliPad.h"
 
 @implementation ProjectMasterCollectionViewCell
 
@@ -74,7 +75,12 @@
         self.textView.textAlignment = NSTextAlignmentCenter;
     }
     
-    [self.screenshotsCollectionView registerClass:[ProjectCollectionViewCell class] forCellWithReuseIdentifier:@"ProjectCollectionViewCell"];
+//    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+//        [self.screenshotsCollectionView registerClass:[ProjectCollectionViewCell class] forCellWithReuseIdentifier:@"ProjectCollectionViewCelliPad"];
+//    } else {
+        [self.screenshotsCollectionView registerClass:[ProjectCollectionViewCell class] forCellWithReuseIdentifier:@"ProjectCollectionViewCell"];
+    //}
+    
     self.screenshotsCollectionView.delegate = self;
     self.screenshotsCollectionView.dataSource = self;
 
@@ -99,35 +105,76 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    ProjectCollectionViewCell *projectCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ProjectCollectionViewCell" forIndexPath:indexPath];
+//    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+//        
+//        ProjectCollectionViewCelliPad *projectCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ProjectCollectionViewCelliPad" forIndexPath:indexPath];
+//        
+//        if ([self.projectName isEqualToString:@"Remembr!"]) {
+//            
+//            NSString *baseName = @"iPhone5_";
+//            baseName = [baseName stringByAppendingString:[NSString stringWithFormat:@"%d%@", indexPath.row+1,@".png"]];
+//            projectCell.imageView.image = [UIImage imageNamed:baseName];
+//            
+//        } else if ([self.projectName isEqualToString:@"CBC News"]){
+//            
+//            NSString *baseName = @"CBC";
+//            baseName = [baseName stringByAppendingString:[NSString stringWithFormat:@"%d%@", indexPath.row+1,@".PNG"]];
+//            projectCell.imageView.image = [UIImage imageNamed:baseName];
+//            
+//        } else if ([self.projectName isEqualToString:@"Kik Tech News"]){
+//            
+//            NSString *baseName = @"TechNews";
+//            baseName = [baseName stringByAppendingString:[NSString stringWithFormat:@"%d%@", indexPath.row+1,@".PNG"]];
+//            projectCell.imageView.image = [UIImage imageNamed:baseName];
+//            
+//        } else if ([self.projectName isEqualToString:@"Kik Your Memes"]) {
+//            
+//            NSString *baseName = @"Meme";
+//            baseName = [baseName stringByAppendingString:[NSString stringWithFormat:@"%d%@", indexPath.row+1,@".PNG"]];
+//            projectCell.imageView.image = [UIImage imageNamed:baseName];
+//            
+//        }
+//        
+//        projectCell.imageView.contentMode = UIViewContentModeRedraw;
+//        projectCell.imageView.autoresizingMask = (UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleWidth);
+//        
+//        return projectCell;
+//
+//        
+//    } else {
     
-    if ([self.projectName isEqualToString:@"Remembr!"]) {
+        ProjectCollectionViewCell *projectCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ProjectCollectionViewCell" forIndexPath:indexPath];
         
-        NSString *baseName = @"iPhone5_";
-        baseName = [baseName stringByAppendingString:[NSString stringWithFormat:@"%d%@", indexPath.row+1,@".png"]];
-        projectCell.imageView.image = [UIImage imageNamed:baseName];
-    
-    } else if ([self.projectName isEqualToString:@"CBC News"]){
+        if ([self.projectName isEqualToString:@"Remembr!"]) {
+            
+            NSString *baseName = @"iPhone5_";
+            baseName = [baseName stringByAppendingString:[NSString stringWithFormat:@"%d%@", indexPath.row+1,@".png"]];
+            projectCell.imageView.image = [UIImage imageNamed:baseName];
+            
+        } else if ([self.projectName isEqualToString:@"CBC News"]){
+            
+            NSString *baseName = @"CBC";
+            baseName = [baseName stringByAppendingString:[NSString stringWithFormat:@"%d%@", indexPath.row+1,@".PNG"]];
+            projectCell.imageView.image = [UIImage imageNamed:baseName];
+            
+        } else if ([self.projectName isEqualToString:@"Kik Tech News"]){
+            
+            NSString *baseName = @"TechNews";
+            baseName = [baseName stringByAppendingString:[NSString stringWithFormat:@"%d%@", indexPath.row+1,@".PNG"]];
+            projectCell.imageView.image = [UIImage imageNamed:baseName];
+            
+        } else if ([self.projectName isEqualToString:@"Kik Your Memes"]) {
+            
+            NSString *baseName = @"Meme";
+            baseName = [baseName stringByAppendingString:[NSString stringWithFormat:@"%d%@", indexPath.row+1,@".PNG"]];
+            projectCell.imageView.image = [UIImage imageNamed:baseName];
+            
+        }
         
-        NSString *baseName = @"CBC";
-        baseName = [baseName stringByAppendingString:[NSString stringWithFormat:@"%d%@", indexPath.row+1,@".PNG"]];
-        projectCell.imageView.image = [UIImage imageNamed:baseName];
-        
-    } else if ([self.projectName isEqualToString:@"Kik Tech News"]){
-        
-        NSString *baseName = @"TechNews";
-        baseName = [baseName stringByAppendingString:[NSString stringWithFormat:@"%d%@", indexPath.row+1,@".PNG"]];
-        projectCell.imageView.image = [UIImage imageNamed:baseName];
+        return projectCell;
 
-    } else if ([self.projectName isEqualToString:@"Kik Your Memes"]) {
-        
-        NSString *baseName = @"Meme";
-        baseName = [baseName stringByAppendingString:[NSString stringWithFormat:@"%d%@", indexPath.row+1,@".PNG"]];
-        projectCell.imageView.image = [UIImage imageNamed:baseName];
-        
-    }
+    //}
     
-    return projectCell;
 }
 
 

@@ -13,21 +13,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="142" height="252"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ajL-qb-Ova">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ajL-qb-Ova">
                         <rect key="frame" x="0.0" y="0.0" width="142" height="252"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="142" id="Lo3-lP-LUZ"/>
-                            <constraint firstAttribute="height" constant="252" id="ry8-dC-Zn1"/>
-                        </constraints>
                     </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
-            <constraints>
-                <constraint firstItem="ajL-qb-Ova" firstAttribute="leading" secondItem="Lbi-g5-j7j" secondAttribute="leading" id="2lc-nF-gbR"/>
-                <constraint firstItem="ajL-qb-Ova" firstAttribute="top" secondItem="Lbi-g5-j7j" secondAttribute="top" id="rwG-me-jz5"/>
-            </constraints>
             <size key="customSize" width="142" height="252"/>
             <connections>
                 <outlet property="imageView" destination="ajL-qb-Ova" id="dPy-mL-Bwl"/>

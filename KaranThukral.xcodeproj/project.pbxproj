@@ -47,6 +47,8 @@
 		A470E8DB18F035C400D5071C /* profileImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A47573A918EE6B47000B3BC3 /* profileImage.jpeg */; };
 		A470E8DC18F035C400D5071C /* shopify-bag-100x100.png in Resources */ = {isa = PBXBuildFile; fileRef = A44DC54618EE01070016B43C /* shopify-bag-100x100.png */; };
 		A470E8DE18F0386700D5071C /* TeamDave.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A470E8DD18F0386700D5071C /* TeamDave.jpg */; };
+		A470E8E118F03F7800D5071C /* ProjectCollectionViewCelliPad.m in Sources */ = {isa = PBXBuildFile; fileRef = A470E8E018F03F7800D5071C /* ProjectCollectionViewCelliPad.m */; };
+		A470E8E318F03F8E00D5071C /* ProjectCollectionViewCelliPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A470E8E218F03F8E00D5071C /* ProjectCollectionViewCelliPad.xib */; };
 		A47573A518EE62E0000B3BC3 /* KTNavigationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A47573A418EE62E0000B3BC3 /* KTNavigationDelegate.m */; };
 		A47573A818EE6452000B3BC3 /* KTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A47573A718EE6452000B3BC3 /* KTNavigationController.m */; };
 		A475837818EEEBCA00F7880A /* WorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A475837718EEEBCA00F7880A /* WorkViewController.m */; };
@@ -114,6 +116,9 @@
 		A470E8B818F02AA300D5071C /* Meme2.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Meme2.PNG; sourceTree = "<group>"; };
 		A470E8B918F02AA300D5071C /* Meme3.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Meme3.PNG; sourceTree = "<group>"; };
 		A470E8DD18F0386700D5071C /* TeamDave.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = TeamDave.jpg; path = Assets/TeamDave.jpg; sourceTree = "<group>"; };
+		A470E8DF18F03F7800D5071C /* ProjectCollectionViewCelliPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectCollectionViewCelliPad.h; sourceTree = "<group>"; };
+		A470E8E018F03F7800D5071C /* ProjectCollectionViewCelliPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectCollectionViewCelliPad.m; sourceTree = "<group>"; };
+		A470E8E218F03F8E00D5071C /* ProjectCollectionViewCelliPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectCollectionViewCelliPad.xib; sourceTree = "<group>"; };
 		A47573A318EE62E0000B3BC3 /* KTNavigationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTNavigationDelegate.h; sourceTree = "<group>"; };
 		A47573A418EE62E0000B3BC3 /* KTNavigationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTNavigationDelegate.m; sourceTree = "<group>"; };
 		A47573A618EE6452000B3BC3 /* KTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTNavigationController.h; sourceTree = "<group>"; };
@@ -319,6 +324,9 @@
 				A4F17B8D18EF41B30077C1E2 /* ProjectCollectionViewCell.h */,
 				A4F17B8E18EF41B30077C1E2 /* ProjectCollectionViewCell.m */,
 				A4F17B9018EF41CD0077C1E2 /* ProjectCollectionViewCell.xib */,
+				A470E8DF18F03F7800D5071C /* ProjectCollectionViewCelliPad.h */,
+				A470E8E018F03F7800D5071C /* ProjectCollectionViewCelliPad.m */,
+				A470E8E218F03F8E00D5071C /* ProjectCollectionViewCelliPad.xib */,
 				A4F17BA018EF48090077C1E2 /* ProjectMasterCollectionViewCell.h */,
 				A4F17BA118EF48090077C1E2 /* ProjectMasterCollectionViewCell.m */,
 			);
@@ -453,6 +461,7 @@
 				A470E8CF18F035A600D5071C /* CBC8.PNG in Resources */,
 				A414E75D18EDF57D00943AF9 /* Images.xcassets in Resources */,
 				A475837A18EEECE500F7880A /* Main-iPad.storyboard in Resources */,
+				A470E8E318F03F8E00D5071C /* ProjectCollectionViewCelliPad.xib in Resources */,
 				A44DC54218EDF6FD0016B43C /* MainViewCell.xib in Resources */,
 				A414E74F18EDF57D00943AF9 /* InfoPlist.strings in Resources */,
 				A48EDA4918EE34B60014DD8C /* MainCollectionViewCelliPad.xib in Resources */,
@@ -482,6 +491,7 @@
 				A4AC1AC218EE59AA004AB201 /* AnimatedCutomTransition.m in Sources */,
 				A47573A518EE62E0000B3BC3 /* KTNavigationDelegate.m in Sources */,
 				A414E75518EDF57D00943AF9 /* KaranThukralAppDelegate.m in Sources */,
+				A470E8E118F03F7800D5071C /* ProjectCollectionViewCelliPad.m in Sources */,
 				A475837D18EEEFAB00F7880A /* WorkCollectionViewCell.m in Sources */,
 				A4F17B8F18EF41B30077C1E2 /* ProjectCollectionViewCell.m in Sources */,
 				A44DC54018EDF6E70016B43C /* MainCollectionViewCell.m in Sources */,
