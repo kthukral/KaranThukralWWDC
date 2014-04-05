@@ -26,7 +26,6 @@
 }
 
 - (void)prepareForReuse{
-    self.imageView.image = nil;
 }
 
 /*
