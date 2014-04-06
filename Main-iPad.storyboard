@@ -108,12 +108,12 @@
                                 <rect key="frame" x="0.0" y="509" width="768" height="515"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <mutableString key="text">My name is Karan Thukral and I am currently a student at the University of Waterloo studying Systems Design Engineering. 
+                                <string key="text">My name is Karan Thukral and I am currently a student at the University of Waterloo studying Systems Design Engineering. 
 
 I am an extremely passionate Software Developer especially when it comes to the iOS Platform. I have been learning iOS development for the past year and in that time, I have released my own appRemembr! and worked full time as an iOS Developer at Canadian Broadcasting Coorporation. I am also going to be working as an iOS Developer at Shopify for the Summer. 
 
 I would love the oppurtunity to attend WWDC 2014 because it would be an amazing oppurtunity to learn and interact with fellow developers.
- “Stay Hungry, Stay Foolish"</mutableString>
+ “Stay Hungry, Stay Foolish"</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>

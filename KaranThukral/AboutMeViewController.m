@@ -7,6 +7,7 @@
 //
 
 #import "AboutMeViewController.h"
+#import "AnimatedCustomTransition.h"
 
 @interface AboutMeViewController ()
 
@@ -85,4 +86,14 @@
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+- (id<UIViewControllerAnimatedTransitioning>) navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController*)fromVC toViewController:(UIViewController*)toVC
+{
+    if (operation == UINavigationControllerOperationPop) {
+        return [AnimatedCustomTransition new];
+    }
+    
+    return nil;
+}
+
 @end

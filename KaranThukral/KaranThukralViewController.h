@@ -8,14 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KaranThukralViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout> {
-    
-    CGRect seletectedCellFrame;
-}
+@interface KaranThukralViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UINavigationControllerDelegate>
 
-@property (assign) CGRect selectedLabelNavigationFrame;
-@property (assign) CGRect selectedLabelMenuFrame;
-@property (strong, nonatomic) UILabel* selectedLabelForTransitioning;
-@property (assign) CGRect selectedLabelInLineFrame;
+@property (strong, nonatomic) UIPercentDrivenInteractiveTransition* percentInteractionController;
+@property (nonatomic, assign) BOOL canPush;
 
 @end

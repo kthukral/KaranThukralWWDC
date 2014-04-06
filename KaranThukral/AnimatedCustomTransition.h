@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AnimatedCutomTransition : NSObject <UIViewControllerAnimatedTransitioning>
-
-@property (assign) BOOL inReverse;
+@interface AnimatedCustomTransition : NSObject <UIViewControllerAnimatedTransitioning>
 
 @end

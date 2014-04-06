@@ -10,6 +10,7 @@
 #import <MessageUI/MessageUI.h>
 
 @interface AboutMeViewController : UIViewController <MFMailComposeViewControllerDelegate>
+
 @property (weak, nonatomic) IBOutlet UIView *topBackgroundView;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UITextView *textView;

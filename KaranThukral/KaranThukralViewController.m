@@ -13,11 +13,14 @@
 #import "AboutMeViewController.h"
 #import "WorkViewController.h"
 #import "ProjectMasterViewController.h"
+#import "AnimatedCustomTransition.h"
 
 @interface KaranThukralViewController ()
 
 @property (strong, nonatomic) UICollectionView *collectionView;
 @property (strong, nonatomic) UICollectionViewFlowLayout *layout;
+@property (strong, nonatomic) AnimatedCustomTransition *customAnimationHandler;
+@property (strong, nonatomic) UIPercentDrivenInteractiveTransition* interactionController;
 
 @end
 
@@ -27,7 +30,16 @@
 {
     [super viewDidLoad];
     [self setUpCollectionView];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.canPush = YES;
+    self.navigationController.delegate = self;
+    UIPanGestureRecognizer* panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(userDidPan:)];
+    [self.navigationController.view addGestureRecognizer:panGestureRecognizer];
+    self.customAnimationHandler = [AnimatedCustomTransition new];
+    // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+
 }
 
 - (void)setUpCollectionView {
@@ -124,23 +136,8 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    UICollectionViewCell *cell = [self.collectionView cellForItemAtIndexPath:indexPath];
-    
-    if ([cell isKindOfClass:[MainCollectionViewCelliPad class]] || [cell isKindOfClass:[MainCollectionViewCell class]]) {
-        
-        MainCollectionViewCell *mainCell = (MainCollectionViewCell *)cell;
-        
-        self.selectedLabelForTransitioning = mainCell.titleLabel;
-        CGPoint labelPositionInCollectionView = CGPointMake(self.selectedLabelForTransitioning.frame.origin.x, mainCell.frame.origin.y);
-        CGPoint absPosition = [self.collectionView convertPoint:labelPositionInCollectionView toView:self.navigationController.view];
-        
-        self.selectedLabelNavigationFrame = CGRectMake(absPosition.x, absPosition.y, self.selectedLabelForTransitioning.frame.size.width, self.selectedLabelForTransitioning.frame.size.height);
-        
-        CGPoint labelPositionInTableView_menu = CGPointMake(self.selectedLabelForTransitioning.frame.origin.x,
-                                                            mainCell.frame.origin.y+self.collectionView.contentOffset.y+64);
-        CGPoint absolutePosition_menu = [self.collectionView convertPoint:labelPositionInTableView_menu toView:self.navigationController.view];
-        
-        self.selectedLabelMenuFrame = CGRectMake(absolutePosition_menu.x, absolutePosition_menu.y, self.selectedLabelForTransitioning.frame.size.width, self.selectedLabelForTransitioning.frame.size.height);
+    if (self.canPush) {
+        MainCollectionViewCell *mainCell = (MainCollectionViewCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
         
         UIStoryboard *myStoryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
@@ -148,7 +145,6 @@
         }
         if ([mainCell.titleLabel.text isEqualToString: @"Me"]) {
             AboutMeViewController *aboutMe = [myStoryBoard instantiateViewControllerWithIdentifier:@"aboutMe"];
-            
             [self.navigationController pushViewController:aboutMe animated:YES];
         } else if([mainCell.titleLabel.text isEqualToString: @"Work"]){
             WorkViewController *workView = [myStoryBoard instantiateViewControllerWithIdentifier:@"workView"];
@@ -157,9 +153,54 @@
             ProjectMasterViewController *projectView = [myStoryBoard instantiateViewControllerWithIdentifier:@"projectMasterView"];
             [self.navigationController pushViewController:projectView animated:YES];
         }
+
+    }
+}
+
+- (void)userDidPan:(UIPanGestureRecognizer*)recognizer
+{
+    self.canPush = NO;
+    UIView* view = self.navigationController.view;
+    if (recognizer.state == UIGestureRecognizerStateBegan) {
+        
+        CGPoint locationInView = [recognizer locationInView:view];
+        
+        //The gesture will only work in the first quater of the screen
+        if (locationInView.x <  160 && self.navigationController.viewControllers.count > 1) {
+            self.interactionController = [UIPercentDrivenInteractiveTransition new];
+            [self.navigationController popViewControllerAnimated:YES];
+        }
+        
+    } else if (recognizer.state == UIGestureRecognizerStateChanged) {
+        
+        CGPoint translation = [recognizer translationInView:view]; //How much did the user translate
+        CGFloat howMuchIsDone = fabs(translation.x / CGRectGetWidth(view.bounds));// How much of the anumation is done
+        [self.interactionController updateInteractiveTransition:howMuchIsDone];
+        
+    } else if (recognizer.state == UIGestureRecognizerStateEnded) {
+        self.canPush = YES;
+        if ([recognizer velocityInView:view].x > 2) {
+            [self.interactionController finishInteractiveTransition]; // The user flicked off the view
+        } else {
+            [self.interactionController cancelInteractiveTransition]; // The user flicked the view back
+        }
+        self.interactionController = nil;
         
     }
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC
+{
+    if (operation == UINavigationControllerOperationPop || operation == UINavigationControllerOperationPush) {
+        return self.customAnimationHandler;
+    }
     
+    return nil;
+}
+
+- (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController
+{
+    return self.interactionController;
 }
 
 
