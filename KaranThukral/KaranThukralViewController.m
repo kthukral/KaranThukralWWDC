@@ -90,7 +90,7 @@
         if ([catagoriesArray[indexPath.row] isEqualToString:@"Me"]) {
             cell.backgroundColor = [UIColor colorWithRed:0.18 green:0.57 blue:0.84 alpha:1];
             cell.imageViewLeft.contentMode = UIViewContentModeScaleAspectFit;
-            cell.imageViewLeft.image = [UIImage imageNamed:@"shopify-bag-100x100.png"];
+            cell.imageViewLeft.image = [UIImage imageNamed:@"hiImage@2x.png"];
             cell.imageViewRight.hidden = YES;
         } else if ([catagoriesArray[indexPath.row] isEqualToString:@"Work"]) {
             cell.backgroundColor = [UIColor colorWithRed:0.75 green:0.22 blue:0.16 alpha:1];
@@ -102,6 +102,8 @@
             cell.imageViewLeft.contentMode = UIViewContentModeRedraw;
             cell.imageViewLeft.image = [UIImage imageNamed:@"RemembrIcon@2x.png"];
             cell.imageViewRight.hidden = YES;
+            cell.imageViewLeft.layer.cornerRadius = 12.0f;
+            cell.imageViewLeft.clipsToBounds = YES;
         }
         
         [cell.titleLabel setText:catagoriesArray[indexPath.row]];
@@ -114,7 +116,7 @@
         if ([catagoriesArray[indexPath.row] isEqualToString:@"Me"]) {
             cell.backgroundColor = [UIColor colorWithRed:0.18 green:0.57 blue:0.84 alpha:1];
             cell.imageViewLeft.contentMode = UIViewContentModeScaleAspectFit;
-            cell.imageViewLeft.image = [UIImage imageNamed:@"shopify-bag-100x100.png"];
+            cell.imageViewLeft.image = [UIImage imageNamed:@"hiImage@2x.png"];
             cell.imageViewRight.hidden = YES;
         } else if ([catagoriesArray[indexPath.row] isEqualToString:@"Work"]) {
             cell.backgroundColor = [UIColor colorWithRed:0.75 green:0.22 blue:0.16 alpha:1];
@@ -126,6 +128,8 @@
             cell.imageViewLeft.contentMode = UIViewContentModeRedraw;
             cell.imageViewLeft.image = [UIImage imageNamed:@"RemembrIcon@2x.png"];
             cell.imageViewRight.hidden = YES;
+            cell.imageViewLeft.layer.cornerRadius = 12.0f;
+            cell.imageViewLeft.clipsToBounds = YES;
         }
         
         [cell.titleLabel setText:catagoriesArray[indexPath.row]];

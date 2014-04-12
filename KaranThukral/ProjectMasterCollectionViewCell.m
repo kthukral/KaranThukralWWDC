@@ -8,7 +8,6 @@
 
 #import "ProjectMasterCollectionViewCell.h"
 #import "ProjectCollectionViewCell.h"
-#import "ProjectCollectionViewCelliPad.h"
 
 @implementation ProjectMasterCollectionViewCell
 
@@ -47,8 +46,8 @@
     
     if ([self.projectName isEqualToString:@"Remembr!"]) {
         
-        self.textView.text = @"A simple iOS application made using the iOS 7 SDK for iPhones and iPods. The application enables the user to create catagories with custom icons and background colours to organize their notes.";
-        self.textView.text = [self.textView.text stringByAppendingString:[NSString stringWithFormat:@"\n\n %@ \n%@ \n%@",@"Website: http://www.remembrapp.com",@"App Store: https://itunes.apple.com/us/app/remembr!/id747470885?ls=1&mt=8", @"Git Repo: http://hithub.com/kthukral/Remembr"]];
+        self.textView.text = @"A simple iOS application made using the iOS 7 SDK for iPhones and iPods. The application enables the user to create categories with custom icons and background colors to organize their notes.";
+        self.textView.text = [self.textView.text stringByAppendingString:[NSString stringWithFormat:@"\n\n %@ \n%@ \n%@",@"Website: http://www.remembrapp.com",@"App Store: https://itunes.apple.com/us/app/remembr!/id747470885?ls=1&mt=8", @"Git Repo: http://github.com/kthukral/Remembr"]];
         self.textView.textAlignment = NSTextAlignmentCenter;
         
     } else if ([self.projectName isEqualToString:@"CBC News"]){
@@ -59,14 +58,14 @@
     } else if ([self.projectName isEqualToString:@"Kik Tech News"]){
         
         self.textView.text = @"A simple web app created using the Kik Cards platform that downloads the feeds from two technology website, The Verge and Engadget and you can read the stories and \"Kik\" them to your friends.";
-        self.textView.text = [self.textView.text stringByAppendingString:[NSString stringWithFormat:@"\n\n %@ \n%@",@"Website: http://www.kik-tech-news.herokuapp.com", @"Git Repo: http://hithub.com/kthukral/Kik-Tech-News"]];
+        self.textView.text = [self.textView.text stringByAppendingString:[NSString stringWithFormat:@"\n\n %@ \n%@",@"Website: kik-tech-news.herokuapp.com", @"Git Repo: http://github.com/kthukral/Kik-Tech-News"]];
         
         self.textView.textAlignment = NSTextAlignmentCenter;
         
     } else if ([self.projectName isEqualToString:@"Kik Your Memes"]) {
         
         self.textView.text = @"A simple web app created using the Kik Cards platform that enables you to pick an image from your camera or photo-gallery and add captions to them to create memes to \"Kik\" to your friends.";
-        self.textView.text = [self.textView.text stringByAppendingString:[NSString stringWithFormat:@"\n\n %@ \n%@",@"Website: http://www.kik-your-memes.herokuapp.com", @"Git Repo: http://hithub.com/kthukral/Kik-Your-Memes"]];
+        self.textView.text = [self.textView.text stringByAppendingString:[NSString stringWithFormat:@"\n\n %@ \n%@",@"Website: http://kik-memes.herokuapp.com", @"Git Repo: http://github.com/kthukral/Kik-Your-Meme"]];
         
         self.textView.textAlignment = NSTextAlignmentCenter;
     } else if ([self.projectName isEqualToString:@"Team Dave"]) {
@@ -77,11 +76,7 @@
         self.textView.textAlignment = NSTextAlignmentCenter;
     }
     
-//    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-//        [self.screenshotsCollectionView registerClass:[ProjectCollectionViewCell class] forCellWithReuseIdentifier:@"ProjectCollectionViewCelliPad"];
-//    } else {
-        [self.screenshotsCollectionView registerClass:[ProjectCollectionViewCell class] forCellWithReuseIdentifier:@"ProjectCollectionViewCell"];
-    //}
+    [self.screenshotsCollectionView registerClass:[ProjectCollectionViewCell class] forCellWithReuseIdentifier:@"ProjectCollectionViewCell"];
     
     self.screenshotsCollectionView.delegate = self;
     self.screenshotsCollectionView.dataSource = self;
@@ -106,44 +101,6 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    
-//    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-//        
-//        ProjectCollectionViewCelliPad *projectCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ProjectCollectionViewCelliPad" forIndexPath:indexPath];
-//        
-//        if ([self.projectName isEqualToString:@"Remembr!"]) {
-//            
-//            NSString *baseName = @"iPhone5_";
-//            baseName = [baseName stringByAppendingString:[NSString stringWithFormat:@"%d%@", indexPath.row+1,@".png"]];
-//            projectCell.imageView.image = [UIImage imageNamed:baseName];
-//            
-//        } else if ([self.projectName isEqualToString:@"CBC News"]){
-//            
-//            NSString *baseName = @"CBC";
-//            baseName = [baseName stringByAppendingString:[NSString stringWithFormat:@"%d%@", indexPath.row+1,@".PNG"]];
-//            projectCell.imageView.image = [UIImage imageNamed:baseName];
-//            
-//        } else if ([self.projectName isEqualToString:@"Kik Tech News"]){
-//            
-//            NSString *baseName = @"TechNews";
-//            baseName = [baseName stringByAppendingString:[NSString stringWithFormat:@"%d%@", indexPath.row+1,@".PNG"]];
-//            projectCell.imageView.image = [UIImage imageNamed:baseName];
-//            
-//        } else if ([self.projectName isEqualToString:@"Kik Your Memes"]) {
-//            
-//            NSString *baseName = @"Meme";
-//            baseName = [baseName stringByAppendingString:[NSString stringWithFormat:@"%d%@", indexPath.row+1,@".PNG"]];
-//            projectCell.imageView.image = [UIImage imageNamed:baseName];
-//            
-//        }
-//        
-//        projectCell.imageView.contentMode = UIViewContentModeRedraw;
-//        projectCell.imageView.autoresizingMask = (UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleWidth);
-//        
-//        return projectCell;
-//
-//        
-//    } else {
     
         ProjectCollectionViewCell *projectCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ProjectCollectionViewCell" forIndexPath:indexPath];
         
@@ -175,7 +132,6 @@
         
         return projectCell;
 
-    //}
     
 }
 
