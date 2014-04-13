@@ -65,6 +65,7 @@
 		A48EDA4718EE2DFC0014DD8C /* MainCollectionViewCelliPad.m in Sources */ = {isa = PBXBuildFile; fileRef = A48EDA4618EE2DFC0014DD8C /* MainCollectionViewCelliPad.m */; };
 		A48EDA4918EE34B60014DD8C /* MainCollectionViewCelliPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A48EDA4818EE34B60014DD8C /* MainCollectionViewCelliPad.xib */; };
 		A48EDA4E18EE37250014DD8C /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A48EDA4D18EE37250014DD8C /* AboutMeViewController.m */; };
+		A490347D18FAE12800FD6C2B /* ProjectCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4F17B9018EF41CD0077C1E2 /* ProjectCollectionViewCell.xib */; };
 		A4AC1AC218EE59AA004AB201 /* AnimatedCustomTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AC1AC118EE59AA004AB201 /* AnimatedCustomTransition.m */; };
 		A4C2790718EE6066008830AD /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A48EDA4D18EE37250014DD8C /* AboutMeViewController.m */; };
 		A4F17B8F18EF41B30077C1E2 /* ProjectCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F17B8E18EF41B30077C1E2 /* ProjectCollectionViewCell.m */; };
@@ -465,6 +466,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A490347D18FAE12800FD6C2B /* ProjectCollectionViewCell.xib in Resources */,
 				A470E8DB18F035C400D5071C /* profileImage.jpeg in Resources */,
 				A470E8DC18F035C400D5071C /* shopify-bag-100x100.png in Resources */,
 				A470E8D818F035BD00D5071C /* Meme1.PNG in Resources */,
