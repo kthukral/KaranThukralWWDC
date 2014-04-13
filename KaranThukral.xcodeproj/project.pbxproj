@@ -26,6 +26,7 @@
 		A44DC54518EDFC2D0016B43C /* InformationStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A44DC54418EDFC2D0016B43C /* InformationStore.m */; };
 		A44DC54918EE02A20016B43C /* RemembrIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A44DC54818EE02A20016B43C /* RemembrIcon@2x.png */; };
 		A466B6FD18F8D9E00080EF75 /* hiImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A466B6FC18F8D9E00080EF75 /* hiImage@2x.png */; };
+		A466B6FF18F8E01E0080EF75 /* CBC_transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = A466B6FE18F8E01E0080EF75 /* CBC_transparent.png */; };
 		A470E8C818F035A500D5071C /* CBC1.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A470E8AA18F02AA300D5071C /* CBC1.PNG */; };
 		A470E8C918F035A500D5071C /* CBC2.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A470E8AB18F02AA300D5071C /* CBC2.PNG */; };
 		A470E8CA18F035A500D5071C /* CBC3.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A470E8AC18F02AA300D5071C /* CBC3.PNG */; };
@@ -57,7 +58,6 @@
 		A470E8F318F049FE00D5071C /* Website.png in Resources */ = {isa = PBXBuildFile; fileRef = A470E8EB18F049FE00D5071C /* Website.png */; };
 		A470E8F418F049FE00D5071C /* Website@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A470E8EC18F049FE00D5071C /* Website@2x.png */; };
 		A470E8F618F04F2900D5071C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A470E8F518F04F2900D5071C /* MessageUI.framework */; };
-		A470E8F918F056F400D5071C /* CBCLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A470E8F718F056F400D5071C /* CBCLogo.jpg */; };
 		A470E8FA18F056F400D5071C /* kikLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = A470E8F818F056F400D5071C /* kikLogo.png */; };
 		A475837818EEEBCA00F7880A /* WorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A475837718EEEBCA00F7880A /* WorkViewController.m */; };
 		A475837A18EEECE500F7880A /* Main-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A475837918EEECE500F7880A /* Main-iPad.storyboard */; };
@@ -110,6 +110,7 @@
 		A44DC54618EE01070016B43C /* shopify-bag-100x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "shopify-bag-100x100.png"; path = "Assets/shopify-bag-100x100.png"; sourceTree = "<group>"; };
 		A44DC54818EE02A20016B43C /* RemembrIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RemembrIcon@2x.png"; sourceTree = "<group>"; };
 		A466B6FC18F8D9E00080EF75 /* hiImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hiImage@2x.png"; path = "Assets/hiImage@2x.png"; sourceTree = "<group>"; };
+		A466B6FE18F8E01E0080EF75 /* CBC_transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CBC_transparent.png; path = Assets/CBC_transparent.png; sourceTree = "<group>"; };
 		A470E8AA18F02AA300D5071C /* CBC1.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CBC1.PNG; sourceTree = "<group>"; };
 		A470E8AB18F02AA300D5071C /* CBC2.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CBC2.PNG; sourceTree = "<group>"; };
 		A470E8AC18F02AA300D5071C /* CBC3.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CBC3.PNG; sourceTree = "<group>"; };
@@ -134,7 +135,6 @@
 		A470E8EB18F049FE00D5071C /* Website.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Website.png; sourceTree = "<group>"; };
 		A470E8EC18F049FE00D5071C /* Website@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Website@2x.png"; sourceTree = "<group>"; };
 		A470E8F518F04F2900D5071C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		A470E8F718F056F400D5071C /* CBCLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = CBCLogo.jpg; path = Assets/CBCLogo.jpg; sourceTree = "<group>"; };
 		A470E8F818F056F400D5071C /* kikLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kikLogo.png; path = Assets/kikLogo.png; sourceTree = "<group>"; };
 		A47573A918EE6B47000B3BC3 /* profileImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = profileImage.jpeg; path = Assets/profileImage.jpeg; sourceTree = "<group>"; };
 		A475837618EEEBCA00F7880A /* WorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkViewController.h; sourceTree = "<group>"; };
@@ -242,8 +242,8 @@
 		A414E74B18EDF57D00943AF9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A466B6FE18F8E01E0080EF75 /* CBC_transparent.png */,
 				A466B6FC18F8D9E00080EF75 /* hiImage@2x.png */,
-				A470E8F718F056F400D5071C /* CBCLogo.jpg */,
 				A470E8F818F056F400D5071C /* kikLogo.png */,
 				A470E8E418F049FE00D5071C /* SocialMediaIcons */,
 				A470E8DD18F0386700D5071C /* TeamDave.jpg */,
@@ -493,7 +493,6 @@
 				A470E8CB18F035A500D5071C /* CBC4.PNG in Resources */,
 				A470E8CC18F035A500D5071C /* CBC5.PNG in Resources */,
 				A470E8CD18F035A500D5071C /* CBC6.PNG in Resources */,
-				A470E8F918F056F400D5071C /* CBCLogo.jpg in Resources */,
 				A470E8CE18F035A600D5071C /* CBC7.PNG in Resources */,
 				A470E8CF18F035A600D5071C /* CBC8.PNG in Resources */,
 				A414E75D18EDF57D00943AF9 /* Images.xcassets in Resources */,
@@ -504,6 +503,7 @@
 				A414E74F18EDF57D00943AF9 /* InfoPlist.strings in Resources */,
 				A48EDA4918EE34B60014DD8C /* MainCollectionViewCelliPad.xib in Resources */,
 				A44DC54918EE02A20016B43C /* RemembrIcon@2x.png in Resources */,
+				A466B6FF18F8E01E0080EF75 /* CBC_transparent.png in Resources */,
 				A414E75818EDF57D00943AF9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

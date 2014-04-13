@@ -42,7 +42,9 @@
     
     self.projectName = projectName;
     self.titleLabel.text = projectName;
-
+    
+    self.backgroundColor = [UIColor colorWithRed:0.92 green:0.92 blue:0.92 alpha:1];
+    self.textView.backgroundColor = [UIColor colorWithRed:0.92 green:0.92 blue:0.92 alpha:1];
     
     if ([self.projectName isEqualToString:@"Remembr!"]) {
         

@@ -46,27 +46,20 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)emailMe:(id)sender {
     
-    MFMailComposeViewController *mailComposer = [[MFMailComposeViewController alloc] init];
-    mailComposer.mailComposeDelegate = self;
-    [mailComposer setToRecipients:[NSArray arrayWithObjects: @"mail@karanthukral.me",nil]];
-    [mailComposer setMessageBody:@"" isHTML:NO];
-    [self presentViewController:mailComposer animated:YES completion:nil];
+    if([MFMailComposeViewController canSendMail]){
+        MFMailComposeViewController *mailComposer = [[MFMailComposeViewController alloc] init];
+        mailComposer.mailComposeDelegate = self;
+        [mailComposer setToRecipients:[NSArray arrayWithObjects: @"mail@karanthukral.me",nil]];
+        [mailComposer setMessageBody:@"" isHTML:NO];
+        [self presentViewController:mailComposer animated:YES completion:nil];
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"No Mail Setup" message:@"Opps, looks like no mail account is setup. You can set up an account in settings or email me at mail@karanthukral.me" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        [alert show];
+    }
     
 }
 

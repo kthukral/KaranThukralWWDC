@@ -38,17 +38,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
     return 1;
 }
@@ -60,17 +49,22 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     WorkCollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"workCell" forIndexPath:indexPath];
+    
+    //backgorund color
+    cell.backgroundColor = [UIColor colorWithRed:0.92 green:0.92 blue:0.92 alpha:1];
+    cell.textView.backgroundColor = [UIColor colorWithRed:0.92 green:0.92 blue:0.92 alpha:1];
+    
     cell.textView.textAlignment = NSTextAlignmentJustified;
     cell.textView.textContainerInset = UIEdgeInsetsMake(1, 5, 1, 5);
     if (indexPath.row == 0) {
         cell.companyName.text = @"Shopify";
         cell.imageView.image = [UIImage imageNamed:@"shopify-bag-100x100.png"];
-        cell.textView.text = @"Shopify is an e-commerce platform that enables the masses to create, manage and run online stores. I am going to be working full time over the summer on their iOS applications mainly for the iPhone. The app enables the user to manage their stores, orders and also accept credit card payments in person using an external accessory. I am very excited to start my work term at the company and WWDC will provide me the with the knowledge to better improve the application.";
+        cell.textView.text = @"I am going to be working at Shopify for the summer term as an iOS Developer primiraily on the iPhone application. The application enables the user to manage their online stores and also accept & process credit card transactions with the use of an additional iPhone accessory.";
     } else if (indexPath.row == 1){
         cell.companyName.text = @"Canadian Broadcasting Coorporation";
-        cell.imageView.image = [UIImage imageNamed:@"CBCLogo.jpg"];
-        cell.textView.text = @"I worked at the Canadian Broadcasting Corporation (CBC) from September to December 2013 as an iOS Developer. While working there I was given a project by the lead iOS Developer to recreate their news application in a completely native fashion using the newly released iOS 7. This project involved using the new API's like Text Kit, and also creating a parser to parse HTML and dynamically layout views. This app was meant as a prototype for internal use and help determine the future direction of the apps that the company wanted to undertake. Screenshots of the application can be found on my website:";
-        cell.textView.text = [cell.textView.text stringByAppendingString:@"http://www.karanthukral.me"];
+        cell.imageView.image = [UIImage imageNamed:@"CBC_transparent.png"];
+        cell.textView.text = @"I worked at the Canadian Broadcasting Corporation for 4 months as an iOS Developer. I worked to recreate their news application in a completely native fashion using the iOS 7 SDK. This project involved using the new API's like Text Kit, and also creating a parser to parse HTML and dynamically layout views. This app was meant as a prototype for internal use and help determine the future direction of the apps that the company wanted to undertake. Screenshots of the application can be found on my website:";
+        cell.textView.text = [cell.textView.text stringByAppendingString:@" http://www.karanthukral.me"];
     } else {
         cell.companyName.text = @"Kik Interactive";
         cell.imageView.image = [UIImage imageNamed:@"kikLogo.png"];
